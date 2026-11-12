@@ -21,4 +21,4 @@ Thumbs.db
 desktop.ini
 
 # Basis data lokal (dibuat otomatis oleh server)
-data/
+/data/
