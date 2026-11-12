@@ -13,6 +13,7 @@ Aplikasi dirancang berdasarkan **teori beban kognitif** dan bertujuan menumbuhke
 ## Status
 
 Tahap **perencanaan & desain** (model pengembangan ADDIE: tahap *Analysis* selesai, tahap *Design* berlangsung).
+https://nadasyifakamiliaaa-creator.github.io/2225250089_nadasyifakamilia/
 
 ## Isi Repositori
 
