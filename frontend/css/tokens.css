@@ -1,0 +1,103 @@
+/* Token desain — satu-satunya tempat nilai warna/huruf/jarak ditulis (docs/05 bagian 1).
+   Tema: bawaan mengikuti perangkat; Pengaturan dapat memaksa terang/gelap lewat
+   <html data-theme="light|dark">. Ukuran huruf lewat <html data-font-size="large|xlarge">. */
+
+:root {
+  color-scheme: light;
+
+  /* Warna */
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #1f2933;
+  --text-muted: #52606d;
+  --primary: #2f6fb2;
+  --primary-text: #ffffff;
+  --primary-soft: #e6eff8;
+  --primary-strong: #245a93; /* teks biru di atas --primary-soft (kontras ≥ 4,5:1) */
+  --success: #2e7d4f;
+  --warning: #9a6700;
+  --error: #b23b3b;
+  --border: #d9dee4;
+  --focus: #2f6fb2;
+
+  /* Tipografi */
+  --font-family: system-ui, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+  --font-size-base: 1.125rem; /* 18 px */
+  --font-size-small: 1rem;
+  --font-size-title: 1.375rem; /* 22 px */
+  --font-size-hero: 1.75rem;
+  --line-height: 1.5;
+  --measure: 60ch;
+
+  /* Jarak */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Bentuk */
+  --radius-card: 12px;
+  --radius-button: 10px;
+  --touch-target: 48px;
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.08);
+
+  /* Gerak (maks 200 ms) */
+  --transition: 150ms ease-out;
+}
+
+/* Tema gelap: mengikuti perangkat, kecuali siswa memilih "Terang" */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #16181d;
+    --surface: #20232a;
+    --text: #e6e8eb;
+    --text-muted: #a9b1bb;
+    --primary: #7fb0e6;
+    --primary-text: #10233a;
+    --primary-soft: #243445;
+    --primary-strong: #a9cdf2;
+    --success: #7cc79c;
+    --warning: #e3b341;
+    --error: #e58a8a;
+    --border: #343841;
+    --focus: #7fb0e6;
+    --shadow-card: none;
+  }
+}
+
+/* Tema gelap dipilih di Pengaturan */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #16181d;
+  --surface: #20232a;
+  --text: #e6e8eb;
+  --text-muted: #a9b1bb;
+  --primary: #7fb0e6;
+  --primary-text: #10233a;
+  --primary-soft: #243445;
+  --primary-strong: #a9cdf2;
+  --success: #7cc79c;
+  --warning: #e3b341;
+  --error: #e58a8a;
+  --border: #343841;
+  --focus: #7fb0e6;
+  --shadow-card: none;
+}
+
+/* Ukuran huruf (semua ukuran berbasis rem ikut membesar) */
+:root[data-font-size='large'] {
+  font-size: 112.5%;
+}
+
+:root[data-font-size='xlarge'] {
+  font-size: 125%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: 0ms;
+  }
+}

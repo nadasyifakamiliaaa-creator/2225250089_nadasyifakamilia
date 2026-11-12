@@ -1,0 +1,42 @@
+{
+  "id": "mean-01",
+  "title": "Apa itu Rata-rata?",
+  "objectives": ["TP1"],
+  "screens": [
+    {
+      "type": "context",
+      "text": "Ani membawa 3 kelereng, Budi 5, Citra 6, dan Dodi 2. Mereka ingin membagi semua kelereng sama rata. Berapa kelereng yang didapat masing-masing?"
+    },
+    {
+      "type": "equal_share",
+      "text": "Semua kelereng dikumpulkan, lalu dibagi sama rata. Sekarang setiap anak punya 4 kelereng.",
+      "data": [3, 5, 6, 2],
+      "names": ["Ani", "Budi", "Citra", "Dodi"],
+      "unit": "kelereng"
+    },
+    {
+      "type": "concept",
+      "text": "Bilangan 4 itu disebut rata-rata. Rata-rata adalah hasil membagi jumlah semua data secara sama rata kepada setiap data."
+    },
+    {
+      "type": "worked_example",
+      "data": [3, 5, 6, 2],
+      "steps": [
+        { "key": "list", "text": "Data kelereng: 3, 5, 6, dan 2." },
+        { "key": "n", "text": "Ada 4 anak, jadi ada 4 data.", "value": 4 },
+        { "key": "sum", "text": "Kumpulkan semua kelereng: 3 + 5 + 6 + 2 = 16.", "value": 16 },
+        { "key": "divide", "text": "Bagi sama rata: 16 : 4 = 4.", "value": 4 },
+        { "key": "interpret", "text": "Jadi, rata-rata kelereng setiap anak adalah 4." }
+      ]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-01-001",
+      "givenSteps": ["list", "n", "sum"]
+    },
+    {
+      "type": "practice",
+      "itemRefs": ["p-mean-01-002", "p-mean-01-003", "p-mean-01-004"]
+    }
+  ]
+}

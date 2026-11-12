@@ -1,0 +1,52 @@
+{
+  "id": "mean-04",
+  "title": "Rata-rata dari Tabel Frekuensi",
+  "objectives": ["TP4"],
+  "screens": [
+    {
+      "type": "context",
+      "text": "Banyak siswa kelas 8A mendapat nilai kuis yang sama. Daripada menulis 20 angka, guru membuat tabel frekuensi. Bagaimana menghitung rata-ratanya?"
+    },
+    {
+      "type": "concept",
+      "text": "Frekuensi adalah berapa kali sebuah nilai muncul. Banyak data adalah jumlah semua frekuensi, bukan banyak baris tabel."
+    },
+    {
+      "type": "concept",
+      "text": "Untuk mendapat jumlah semua data, kalikan setiap nilai dengan frekuensinya, lalu jumlahkan semua hasil kalinya.",
+      "formula": { "numerator": "jumlah (nilai × frekuensi)", "denominator": "jumlah frekuensi" }
+    },
+    {
+      "type": "worked_example",
+      "table": [
+        { "x": 6, "f": 3 },
+        { "x": 7, "f": 6 },
+        { "x": 8, "f": 7 },
+        { "x": 9, "f": 4 }
+      ],
+      "valueLabel": "Nilai",
+      "frequencyLabel": "Banyak siswa",
+      "steps": [
+        { "key": "list", "text": "Baca tabel: nilai 6 didapat 3 siswa, nilai 7 oleh 6 siswa, nilai 8 oleh 7 siswa, dan nilai 9 oleh 4 siswa." },
+        { "key": "n", "text": "Banyak data = jumlah frekuensi = 3 + 6 + 7 + 4 = 20.", "value": 20 },
+        { "key": "sum", "text": "Kalikan nilai × frekuensi, lalu jumlahkan: 18 + 42 + 56 + 36 = 152.", "value": 152 },
+        { "key": "divide", "text": "Bagi: 152 : 20 = 7,6.", "value": 7.6 },
+        { "key": "interpret", "text": "Jadi, rata-rata nilai kuis kelas 8A adalah 7,6." }
+      ]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-04-001",
+      "givenSteps": ["list", "n"]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-04-002",
+      "givenSteps": ["list"]
+    },
+    {
+      "type": "practice",
+      "itemRefs": ["p-mean-04-003", "p-mean-04-004", "p-mean-04-005", "p-mean-04-006"]
+    }
+  ]
+}

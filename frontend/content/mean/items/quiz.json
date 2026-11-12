@@ -1,0 +1,185 @@
+[
+  {
+    "id": "q-mean-001", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Nilai praktik olahraga Tono adalah 78, 85, 80, 92, dan 70. Berapa nilai rata-ratanya?",
+    "data": [78, 85, 80, 92, 70], "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "q-mean-002", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Curah hujan selama 4 hari adalah 12, 8, 15, dan 9 mm. Berapa rata-rata curah hujannya?",
+    "data": [12, 8, 15, 9], "unit": "mm", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "q-mean-003", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Sampah organik yang dikumpulkan 8 kelas (dalam kg): 6, 9, 7, 5, 8, 10, 7, dan 4. Berapa rata-rata sampah organik per kelas?",
+    "data": [6, 9, 7, 5, 8, 10, 7, 4], "unit": "kg", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "q-mean-004", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "pekerjaan",
+    "type": "stepwise_mean",
+    "prompt": "Hasil panen jeruk selama 6 hari (dalam kg): 25, 30, 28, 32, 27, dan 31. Berapa rata-rata hasil panennya per hari? Bulatkan sampai 1 angka di belakang koma.",
+    "data": [25, 30, 28, 32, 27, 31], "unit": "kg", "decimals": 1, "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "q-mean-005", "subtopic": "mean-01", "objective": "TP1", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Tiga anak memiliki kelereng 5, 9, dan 7 butir. Jika semua kelereng dibagi sama rata, setiap anak mendapat berapa butir?",
+    "data": [5, 9, 7], "unit": "butir", "steps": ["n", "sum", "divide"]
+  },
+
+  {
+    "id": "q-mean-006", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "personal",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan banyak gol tim futsal sekolah dalam 20 pertandingan. Berapa rata-rata gol per pertandingan?",
+    "table": [{ "x": 0, "f": 3 }, { "x": 1, "f": 6 }, { "x": 2, "f": 7 }, { "x": 3, "f": 4 }],
+    "valueLabel": "Banyak gol", "frequencyLabel": "Banyak pertandingan", "unit": "gol", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Apa arti rata-rata tersebut?",
+      "options": [
+        { "text": "Jika semua gol dibagi sama rata, setiap pertandingan tim mencetak sekitar 1,6 gol.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Tim selalu mencetak 1,6 gol di setiap pertandingan.", "correct": false, "feedback": "Belum tepat. Banyak gol selalu bilangan bulat. 1,6 hanya rata-ratanya." },
+        { "text": "Pertandingan tanpa gol tidak ikut dihitung.", "correct": false, "feedback": "Belum tepat. Pertandingan tanpa gol (0) tetap data dan ikut dihitung." }
+      ]
+    }
+  },
+  {
+    "id": "q-mean-007", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "pekerjaan",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan ukuran sepatu 15 siswa. Berapa rata-rata ukuran sepatu mereka? Bulatkan sampai 1 angka di belakang koma.",
+    "table": [{ "x": 36, "f": 2 }, { "x": 37, "f": 5 }, { "x": 38, "f": 6 }, { "x": 39, "f": 2 }],
+    "valueLabel": "Ukuran sepatu", "frequencyLabel": "Banyak siswa", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Sebuah toko ingin menyediakan sepatu untuk siswa itu. Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Rata-ratanya sekitar 37,5, dan kebanyakan siswa memakai ukuran 37 atau 38.", "correct": true, "feedback": "Tepat. Ada 11 dari 15 siswa yang memakai ukuran 37 atau 38." },
+        { "text": "Toko cukup menyediakan ukuran 37,5 saja.", "correct": false, "feedback": "Belum tepat. Ukuran 37,5 hanya hasil rata-rata. Siswa memakai ukuran 36 sampai 39." },
+        { "text": "Tidak ada siswa yang memakai ukuran 39.", "correct": false, "feedback": "Belum tepat. Ada 2 siswa yang memakai ukuran 39." }
+      ]
+    }
+  },
+  {
+    "id": "q-mean-008", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "pekerjaan",
+    "type": "story_mean",
+    "prompt": "Pada tahun [[y]] Bu Dewi membuka toko kue. Minggu lalu ia menjual [[a]], [[b]], [[c]], [[d]], dan [[e]] kotak kue dalam lima hari. Harga satu kotak [[p]] rupiah. Berapa rata-rata kotak kue yang terjual per hari?",
+    "selectables": {
+      "y": { "display": "2024", "value": 2024, "relevant": false, "meaning": "tahun toko dibuka" },
+      "a": { "display": "35", "value": 35, "relevant": true },
+      "b": { "display": "40", "value": 40, "relevant": true },
+      "c": { "display": "30", "value": 30, "relevant": true },
+      "d": { "display": "45", "value": 45, "relevant": true },
+      "e": { "display": "50", "value": 50, "relevant": true },
+      "p": { "display": "20.000", "value": 20000, "relevant": false, "meaning": "harga satu kotak kue" }
+    },
+    "unit": "kotak",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata kotak kue yang terjual per hari", "correct": true, "feedback": "Tepat." },
+        { "text": "Harga satu kotak kue", "correct": false, "feedback": "Belum tepat. Harga sudah diketahui." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika penjualan lima hari dibagi sama rata, setiap hari terjual 40 kotak kue.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap hari pasti terjual tepat 40 kotak kue.", "correct": false, "feedback": "Belum tepat. Pada satu hari hanya terjual 30 kotak." },
+        { "text": "Penjualan terbanyak dalam sehari adalah 40 kotak.", "correct": false, "feedback": "Belum tepat. Penjualan terbanyak 50 kotak." }
+      ]
+    }
+  },
+  {
+    "id": "q-mean-009", "subtopic": "mean-05", "objective": "TP6", "level": "L2", "context": "ilmiah",
+    "type": "story_mean",
+    "prompt": "Kelas 8C berangkat karyawisata dengan [[b]] bus. Di perjalanan, siswa mencatat suhu udara di lima kota: [[a]], [[c]], [[d]], [[e]], dan [[f]] derajat Celsius. Berapa rata-rata suhu di lima kota itu?",
+    "selectables": {
+      "b": { "display": "2", "value": 2, "relevant": false, "meaning": "banyak bus" },
+      "a": { "display": "27", "value": 27, "relevant": true },
+      "c": { "display": "30", "value": 30, "relevant": true },
+      "d": { "display": "25", "value": 25, "relevant": true },
+      "e": { "display": "29", "value": 29, "relevant": true },
+      "f": { "display": "24", "value": 24, "relevant": true }
+    },
+    "unit": "°C",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata suhu di lima kota", "correct": true, "feedback": "Tepat." },
+        { "text": "Banyak bus yang dipakai", "correct": false, "feedback": "Belum tepat. Banyak bus hanya keterangan tambahan." }
+      ]
+    },
+    "interpret": {
+      "question": "Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata suhunya 27 °C, berada di antara suhu terendah 24 °C dan tertinggi 30 °C.", "correct": true, "feedback": "Tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+        { "text": "Semua kota bersuhu 27 °C.", "correct": false, "feedback": "Belum tepat. Suhu di kota-kota itu berbeda, dari 24 °C sampai 30 °C." },
+        { "text": "Rata-ratanya 27 °C, jadi suhu terendah pasti 27 °C.", "correct": false, "feedback": "Belum tepat. Suhu terendah adalah 24 °C." }
+      ]
+    }
+  },
+  {
+    "id": "q-mean-010", "subtopic": "mean-06", "objective": "TP7", "level": "L2", "context": "pekerjaan",
+    "type": "missing_value",
+    "prompt": "Rata-rata berat 4 paket adalah 3 kg. Tiga paket beratnya 2, 5, dan 4 kg. Berapa berat paket keempat?",
+    "knownData": [2, 5, 4], "targetMean": 3, "totalCount": 4, "unit": "kg"
+  },
+  {
+    "id": "q-mean-011", "subtopic": "mean-06", "objective": "TP7", "level": "L2", "context": "personal",
+    "type": "missing_value",
+    "prompt": "Rata-rata nilai 5 siswa adalah 72. Nilai empat siswa adalah 70, 65, 80, dan 75. Berapa nilai siswa kelima?",
+    "knownData": [70, 65, 80, 75], "targetMean": 72, "totalCount": 5
+  },
+
+  {
+    "id": "q-mean-012", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "personal",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata tinggi 5 pemain voli adalah 170 cm. Seorang pemain baru setinggi 170 cm bergabung. Apa yang terjadi pada rata-rata tinggi pemain?",
+    "options": [
+      { "text": "Rata-ratanya tetap 170 cm, karena data baru sama dengan rata-rata lama.", "correct": true, "feedback": "Tepat. (5 × 170 + 170) : 6 = 170." },
+      { "text": "Rata-ratanya naik, karena banyak pemain bertambah.", "correct": false, "feedback": "Belum tepat. Rata-rata hanya naik jika data baru lebih besar daripada rata-rata lama." },
+      { "text": "Rata-ratanya turun, karena dibagi dengan bilangan yang lebih besar.", "correct": false, "feedback": "Belum tepat. Jumlahnya juga bertambah 170, jadi rata-ratanya tetap." }
+    ]
+  },
+  {
+    "id": "q-mean-013", "subtopic": "mean-06", "objective": "TP6", "level": "L3", "context": "sosial",
+    "type": "multiple_choice",
+    "prompt": "Harga 5 rumah di sebuah jalan adalah 400, 450, 420, dan 430 juta rupiah, serta 3 miliar rupiah. Rata-rata harganya sekitar 940 juta rupiah. Apakah rata-rata ini menggambarkan harga kebanyakan rumah di jalan itu?",
+    "options": [
+      { "text": "Tidak. Empat rumah berharga 400 sampai 450 juta. Rumah seharga 3 miliar menarik rata-rata ke atas.", "correct": true, "feedback": "Tepat. Data ekstrem membuat rata-rata kurang mewakili kebanyakan data." },
+      { "text": "Ya, karena rata-rata selalu menggambarkan semua data dengan tepat.", "correct": false, "feedback": "Belum tepat. Empat dari lima rumah harganya jauh di bawah 940 juta." },
+      { "text": "Ya, karena rumah seharga 3 miliar juga termasuk data.", "correct": false, "feedback": "Belum tepat. Rumah itu memang data, tetapi harganya sangat berbeda sehingga menarik rata-rata ke atas." }
+    ]
+  },
+  {
+    "id": "q-mean-014", "subtopic": "mean-06", "objective": "TP6", "level": "L3", "context": "personal",
+    "type": "multiple_choice",
+    "prompt": "Rina menghitung rata-rata nilai ulangan 5 temannya: 70, 85, 90, 75, dan 80. Ia mendapat hasil 95. Tanpa menghitung ulang, bagaimana kamu tahu hasil Rina salah?",
+    "options": [
+      { "text": "Karena 95 lebih besar daripada nilai tertinggi (90). Rata-rata tidak mungkin melebihi data terbesar.", "correct": true, "feedback": "Tepat. Membandingkan dengan data terkecil dan terbesar adalah cara cepat memeriksa kewajaran." },
+      { "text": "Karena 95 bukan kelipatan 5.", "correct": false, "feedback": "Belum tepat. 95 justru kelipatan 5. Rata-rata boleh berapa saja, asal berada di antara data terkecil dan terbesar." },
+      { "text": "Kita tidak bisa tahu tanpa menghitung ulang.", "correct": false, "feedback": "Belum tepat. Bandingkan saja dengan data terbesar: 95 lebih besar daripada 90." }
+    ]
+  },
+  {
+    "id": "q-mean-015", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "sosial",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata nilai 10 siswa laki-laki adalah 70, dan rata-rata nilai 30 siswa perempuan adalah 80. Berapa rata-rata nilai seluruh siswa?",
+    "options": [
+      { "text": "77,5, karena (10 × 70 + 30 × 80) : 40 = 77,5.", "correct": true, "feedback": "Tepat. Siswa perempuan lebih banyak, jadi rata-rata gabungan lebih dekat ke 80." },
+      { "text": "75, karena (70 + 80) : 2 = 75.", "correct": false, "feedback": "Belum tepat. Banyak siswanya berbeda, jadi kedua rata-rata tidak bisa langsung dirata-ratakan." },
+      { "text": "150, karena 70 + 80 = 150.", "correct": false, "feedback": "Belum tepat. Rata-rata tidak bisa dijumlahkan begitu saja." }
+    ]
+  },
+  {
+    "id": "q-mean-016", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "personal",
+    "type": "missing_value",
+    "prompt": "Tabungan Ani selama 4 minggu adalah Rp18.000, Rp22.000, Rp20.000, dan Rp20.000. Ia ingin rata-rata tabungan 5 minggu menjadi Rp22.000. Berapa rupiah yang harus ia tabung pada minggu kelima?",
+    "knownData": [18000, 22000, 20000, 20000], "targetMean": 22000, "totalCount": 5, "unit": "rupiah"
+  }
+]

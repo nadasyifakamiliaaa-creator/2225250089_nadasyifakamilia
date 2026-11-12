@@ -1,0 +1,8 @@
+# Perkakas pengembangan & pengujian
+pytest>=8.3
+httpx>=0.27
+ruff>=0.8
+pydantic>=2.7
+# Uji end-to-end (tests/e2e). Memakai Google Chrome yang terpasang (channel="chrome"),
+# atau jalankan `playwright install chromium` jika Chrome tidak ada.
+playwright>=1.48

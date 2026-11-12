@@ -1,0 +1,5 @@
+{
+  "topics": [
+    { "id": "mean", "title": "Rata-rata (Mean)", "path": "mean/topic.json" }
+  ]
+}

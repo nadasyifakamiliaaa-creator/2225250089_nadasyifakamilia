@@ -1,0 +1,46 @@
+{
+  "id": "mean-06",
+  "title": "Bernalar dengan Rata-rata",
+  "objectives": ["TP6", "TP7"],
+  "screens": [
+    {
+      "type": "context",
+      "text": "Rata-rata 5 nilai ulangan Rani adalah 80. Satu nilainya terhapus. Empat nilai lainnya 70, 80, 75, dan 85. Bisakah kita menemukan nilai yang hilang?"
+    },
+    {
+      "type": "concept",
+      "text": "Jika rata-rata dan banyak data diketahui, jumlah semua data bisa dicari: jumlah semua data = rata-rata × banyak data."
+    },
+    {
+      "type": "worked_example",
+      "data": [70, 80, 75, 85],
+      "steps": [
+        { "key": "list", "text": "Yang diketahui: rata-rata 5 nilai adalah 80. Empat nilainya 70, 80, 75, dan 85." },
+        { "key": "note", "text": "Jumlah semua (5) nilai = rata-rata × banyak data = 80 × 5 = 400." },
+        { "key": "note", "text": "Jumlah 4 nilai yang diketahui = 70 + 80 + 75 + 85 = 310." },
+        { "key": "note", "text": "Nilai yang hilang = 400 − 310 = 90." },
+        { "key": "interpret", "text": "Periksa: (70 + 80 + 75 + 85 + 90) : 5 = 400 : 5 = 80. Cocok." }
+      ]
+    },
+    {
+      "type": "concept",
+      "text": "Satu data yang sangat besar atau sangat kecil dapat menarik rata-rata. Data seperti ini disebut data ekstrem. Akibatnya, rata-rata bisa kurang menggambarkan kebanyakan data."
+    },
+    {
+      "type": "worked_example",
+      "text": "Uang saku harian 6 anak (dalam ribu rupiah) adalah 3, 4, 3, 5, 4, dan 25. Apakah rata-ratanya menggambarkan uang saku kebanyakan anak?",
+      "data": [3, 4, 3, 5, 4, 25],
+      "unit": "ribu rupiah",
+      "steps": [
+        { "key": "n", "text": "Ada 6 data.", "value": 6 },
+        { "key": "sum", "text": "3 + 4 + 3 + 5 + 4 + 25 = 44.", "value": 44 },
+        { "key": "note", "text": "Rata-rata = 44 : 6 ≈ 7,3 ribu rupiah." },
+        { "key": "interpret", "text": "Lima anak mendapat 3 sampai 5 ribu, tetapi rata-ratanya 7,3 ribu. Satu data ekstrem (25 ribu) menarik rata-rata ke atas, jadi rata-rata kurang menggambarkan kebanyakan anak." }
+      ]
+    },
+    {
+      "type": "practice",
+      "itemRefs": ["p-mean-06-001", "p-mean-06-002", "p-mean-06-003", "p-mean-06-004", "p-mean-06-005", "p-mean-06-006", "p-mean-06-007", "p-mean-06-se1"]
+    }
+  ]
+}

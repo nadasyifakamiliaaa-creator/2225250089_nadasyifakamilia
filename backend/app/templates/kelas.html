@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}{{ classroom.name }}{% endblock %}
+{% block content %}
+<h1>{{ classroom.name }}</h1>
+<p class="text-muted">Kode kelas: <strong>{{ classroom.code }}</strong>{% if classroom.research %} · Mode penelitian aktif{% endif %}</p>
+
+<section class="stat-row" aria-label="Ringkasan kelas">
+  <div class="card stat"><p class="stat-value">{{ summaries | length }}</p><p>siswa aktif</p></div>
+  <div class="card stat">
+    <p class="stat-value">{% if average_best_quiz is not none %}{{ average_best_quiz }}%{% else %}-{% endif %}</p>
+    <p>rata-rata skor kuis terbaik</p>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="kesalahan-kelas">
+  <h2 id="kesalahan-kelas">Kesalahan paling umum di kelas</h2>
+  {% if top_errors %}
+  <ol>
+    {% for code, count in top_errors %}
+    <li><strong>{{ error_names.get(code, code) }}</strong> — {{ count }} kali</li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p>Belum ada data.</p>
+  {% endif %}
+</section>
+
+<section class="card" aria-labelledby="daftar-siswa">
+  <h2 id="daftar-siswa">Siswa</h2>
+  {% if summaries %}
+  <div class="table-scroll">
+    <table class="teacher-table">
+      <thead>
+        <tr>
+          <th scope="col">Kode</th>
+          <th scope="col">Bagian selesai</th>
+          <th scope="col">Benar percobaan pertama</th>
+          <th scope="col">Kuis terbaik</th>
+          <th scope="col">Kuis terakhir</th>
+          <th scope="col">Kesalahan terbanyak</th>
+          <th scope="col">Terakhir aktif</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in summaries %}
+        <tr>
+          <th scope="row"><a href="/guru/siswa/{{ s.student.code }}">{{ s.student.code }}</a></th>
+          <td>{{ s.done }} / {{ subtopic_count }}</td>
+          <td>{% if s.first_try_percent is not none %}{{ s.first_try_percent }}%{% else %}-{% endif %}</td>
+          <td>{% if s.best_quiz is not none %}{{ s.best_quiz }}%{% else %}-{% endif %}</td>
+          <td>{% if s.last_quiz is not none %}{{ s.last_quiz }}%{% else %}-{% endif %}</td>
+          <td>{% if s.top_error %}{{ error_names.get(s.top_error, s.top_error) }}{% else %}-{% endif %}</td>
+          <td>{{ s.student.last_seen | waktu }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <p>Belum ada siswa yang mengirim data. Minta siswa mengisi kode kelas <strong>{{ classroom.code }}</strong> dan kode siswanya di halaman awal aplikasi.</p>
+  {% endif %}
+</section>
+
+<section class="card" aria-labelledby="ekspor">
+  <h2 id="ekspor">Unduh data (CSV)</h2>
+  <p class="text-muted">Untuk analisis penelitian. Waktu dalam UTC. Berkas dapat dibuka di Excel.</p>
+  <ul class="export-list">
+    {% for kind, label in exports.items() %}
+    <li><a class="btn btn-secondary" href="/guru/ekspor/{{ kind }}.csv">{{ label }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

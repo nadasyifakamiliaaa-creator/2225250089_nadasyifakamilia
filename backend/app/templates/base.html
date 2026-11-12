@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>{% block title %}Dasbor Guru{% endblock %} — RataKu</title>
+    <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/guru/static/teacher.css" />
+  </head>
+  <body>
+    <main class="app-main teacher-main">
+      <header class="teacher-header">
+        <p class="teacher-brand">RataKu · Dasbor Guru</p>
+        {% if classroom %}
+        <form method="post" action="/guru/keluar">
+          <button type="submit" class="btn btn-secondary">Keluar</button>
+        </form>
+        {% endif %}
+      </header>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

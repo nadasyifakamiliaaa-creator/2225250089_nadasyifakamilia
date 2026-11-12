@@ -1,0 +1,21 @@
+[project]
+name = "rataku"
+version = "0.7.0"
+description = "PWA belajar rata-rata (mean) untuk siswa SMP"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["e2e: uji end-to-end di browser (lebih lambat; lewati dengan -m \"not e2e\")"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.flake8-bugbear]
+# Pola dependensi standar FastAPI: `session: Session = Depends(get_session)`
+extend-immutable-calls = ["fastapi.Depends"]

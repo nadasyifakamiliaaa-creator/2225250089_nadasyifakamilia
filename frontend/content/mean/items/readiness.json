@@ -1,0 +1,27 @@
+[
+  {
+    "id": "r-mean-001", "subtopic": "kesiapan", "objective": "prasyarat", "level": "L1",
+    "type": "number", "prompt": "Hitunglah 12 + 15 + 18.",
+    "expression": { "op": "sum", "operands": [12, 15, 18] }
+  },
+  {
+    "id": "r-mean-002", "subtopic": "kesiapan", "objective": "prasyarat", "level": "L1",
+    "type": "number", "prompt": "Hitunglah 70 + 80 + 75 + 85 + 90.",
+    "expression": { "op": "sum", "operands": [70, 80, 75, 85, 90] }
+  },
+  {
+    "id": "r-mean-003", "subtopic": "kesiapan", "objective": "prasyarat", "level": "L1",
+    "type": "number", "prompt": "Hitunglah 24 + 26 + 25 + 23 + 27 + 25.",
+    "expression": { "op": "sum", "operands": [24, 26, 25, 23, 27, 25] }
+  },
+  {
+    "id": "r-mean-004", "subtopic": "kesiapan", "objective": "prasyarat", "level": "L1",
+    "type": "number", "prompt": "Hitunglah 400 : 5.",
+    "expression": { "op": "divide", "operands": [400, 5] }
+  },
+  {
+    "id": "r-mean-005", "subtopic": "kesiapan", "objective": "prasyarat", "level": "L1",
+    "type": "number", "prompt": "Hitunglah 156 : 6.",
+    "expression": { "op": "divide", "operands": [156, 6] }
+  }
+]

@@ -1,0 +1,89 @@
+/* Dasar tampilan: reset ringan, tipografi, tata letak halaman. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0)
+    env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 var(--space-3);
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+}
+
+h2 {
+  font-size: var(--font-size-title);
+}
+
+p {
+  margin: 0 0 var(--space-4);
+  max-width: var(--measure);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.app-main {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4) var(--space-6);
+}
+
+.app-main:focus {
+  outline: none;
+}
+
+.loading,
+.noscript {
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

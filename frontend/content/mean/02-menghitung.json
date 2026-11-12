@@ -1,0 +1,50 @@
+{
+  "id": "mean-02",
+  "title": "Menghitung Rata-rata",
+  "objectives": ["TP2", "TP3"],
+  "screens": [
+    {
+      "type": "context",
+      "text": "Rani mendapat nilai ulangan matematika 70, 80, 75, 85, dan 90. Berapa nilai rata-ratanya?"
+    },
+    {
+      "type": "concept",
+      "text": "Untuk menghitung rata-rata, jumlahkan semua data, lalu bagi dengan banyak data.",
+      "formula": { "numerator": "jumlah semua data", "denominator": "banyak data" }
+    },
+    {
+      "type": "concept",
+      "text": "Ada empat langkah: (1) tulis semua data di tabel, (2) hitung banyak data, (3) jumlahkan semua data, (4) bagi jumlah dengan banyak data."
+    },
+    {
+      "type": "worked_example",
+      "data": [70, 80, 75, 85, 90],
+      "steps": [
+        { "key": "list", "text": "Tulis semua nilai Rani di tabel, lalu centang satu per satu." },
+        { "key": "n", "text": "Hitung banyak data: ada 5 nilai.", "value": 5 },
+        { "key": "sum", "text": "Jumlahkan: 70 + 80 + 75 + 85 + 90 = 400.", "value": 400 },
+        { "key": "divide", "text": "Bagi: 400 : 5 = 80.", "value": 80 },
+        { "key": "interpret", "text": "Jadi, nilai rata-rata ulangan Rani adalah 80." }
+      ]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-02-007",
+      "givenSteps": ["list", "n", "sum", "divide"]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-02-001",
+      "givenSteps": ["list", "n", "sum"]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-02-002",
+      "givenSteps": ["list"]
+    },
+    {
+      "type": "practice",
+      "itemRefs": ["p-mean-02-003", "p-mean-02-004", "p-mean-02-005", "p-mean-02-006", "p-mean-02-008", "p-mean-02-se1"]
+    }
+  ]
+}

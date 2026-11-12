@@ -1,0 +1,40 @@
+{
+  "_catatan": "Terjemahan & adaptasi DRAF. Wajib divalidasi (ahli bahasa/pengukuran, uji keterbacaan siswa SMP) sebelum dipakai untuk pengambilan data. Lihat docs/08 bagian B.4.",
+  "paas": {
+    "source": "Paas, F. (1992). Journal of Educational Psychology, 84(4), 429-434.",
+    "question": "Seberapa besar usaha yang kamu keluarkan untuk memahami bagian ini?",
+    "min": 1,
+    "max": 9,
+    "labels": {
+      "1": "Sangat, sangat ringan",
+      "2": "Sangat ringan",
+      "3": "Ringan",
+      "4": "Agak ringan",
+      "5": "Sedang",
+      "6": "Agak berat",
+      "7": "Berat",
+      "8": "Sangat berat",
+      "9": "Sangat, sangat berat"
+    }
+  },
+  "leppink": {
+    "source": "Leppink, J., Paas, F., van der Vleuten, C. P. M., van Gog, T., & van Merriënboer, J. J. G. (2013). Behavior Research Methods, 45, 1058-1072.",
+    "intro": "Bacalah setiap pernyataan, lalu pilih angka 0 sampai 10. 0 berarti sama sekali tidak setuju, 10 berarti sangat setuju. Tidak ada jawaban benar atau salah.",
+    "min": 0,
+    "max": 10,
+    "minLabel": "Sama sekali tidak setuju",
+    "maxLabel": "Sangat setuju",
+    "items": [
+      { "no": 1, "dimension": "IL", "text": "Materi rata-rata yang dipelajari di aplikasi ini sangat rumit." },
+      { "no": 2, "dimension": "IL", "text": "Rumus-rumus dalam materi ini terasa sangat rumit bagi saya." },
+      { "no": 3, "dimension": "IL", "text": "Konsep dan istilah dalam materi ini terasa sangat rumit bagi saya." },
+      { "no": 4, "dimension": "EL", "text": "Petunjuk dan penjelasan di aplikasi ini sangat tidak jelas." },
+      { "no": 5, "dimension": "EL", "text": "Petunjuk dan penjelasan di aplikasi ini sangat tidak membantu saya belajar." },
+      { "no": 6, "dimension": "EL", "text": "Petunjuk dan penjelasan di aplikasi ini memakai bahasa yang sulit dipahami." },
+      { "no": 7, "dimension": "GL", "text": "Aplikasi ini benar-benar meningkatkan pemahaman saya tentang materi rata-rata." },
+      { "no": 8, "dimension": "GL", "text": "Aplikasi ini benar-benar meningkatkan pengetahuan saya tentang pengolahan data (statistika)." },
+      { "no": 9, "dimension": "GL", "text": "Aplikasi ini benar-benar meningkatkan pemahaman saya tentang rumus rata-rata." },
+      { "no": 10, "dimension": "GL", "text": "Aplikasi ini benar-benar meningkatkan pemahaman saya tentang konsep dan istilah dalam materi rata-rata." }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+/* Tambahan gaya untuk dasbor guru (memakai token & komponen dari aplikasi siswa). */
+
+.teacher-main {
+  max-width: 64rem;
+}
+
+.teacher-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.teacher-brand {
+  margin: 0;
+  font-weight: 700;
+  color: var(--primary-strong);
+}
+
+.stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.stat {
+  flex: 1 1 12rem;
+}
+
+.stat p {
+  margin: 0;
+}
+
+.stat-value {
+  font-size: var(--font-size-hero);
+  font-weight: 700;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.teacher-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-small);
+  font-variant-numeric: tabular-nums;
+}
+
+.teacher-table th,
+.teacher-table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.teacher-table thead th {
+  color: var(--text-muted);
+}
+
+.export-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.explanation {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-left: 4px solid var(--primary);
+  background: var(--bg);
+}
+
+.explanation p {
+  margin-bottom: var(--space-1);
+}
+
+.explanation footer {
+  font-size: var(--font-size-small);
+}

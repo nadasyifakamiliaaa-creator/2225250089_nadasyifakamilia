@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Data & rahasia (jangan pernah di-commit)
+*.db
+*.sqlite3
+.env
+exports/
+
+# Node (jika nanti dipakai)
+node_modules/
+
+# Editor & OS
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Basis data lokal (dibuat otomatis oleh server)
+data/

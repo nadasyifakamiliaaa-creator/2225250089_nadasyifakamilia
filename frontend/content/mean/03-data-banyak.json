@@ -1,0 +1,39 @@
+{
+  "id": "mean-03",
+  "title": "Data yang Banyak",
+  "objectives": ["TP2", "TP3"],
+  "screens": [
+    {
+      "type": "context",
+      "text": "Pak Guru mencatat nilai ulangan 10 siswa. Karena datanya banyak, mudah sekali ada nilai yang terlewat atau terhitung dua kali. Bagaimana supaya tidak salah?"
+    },
+    {
+      "type": "concept",
+      "text": "Tiga cara agar tidak salah: (1) centang setiap data di tabel saat menghitung, (2) jumlahkan sedikit demi sedikit, (3) periksa lagi hasilnya sebelum membagi."
+    },
+    {
+      "type": "concept",
+      "text": "Data bernilai 0 tetap dihitung. Misalnya hari tanpa hujan dicatat 0 mm. Hari itu tetap satu data."
+    },
+    {
+      "type": "worked_example",
+      "data": [75, 80, 65, 90, 85, 70, 80, 95, 60, 100],
+      "steps": [
+        { "key": "list", "text": "Tulis 10 nilai di tabel. Centang satu per satu sambil menghitung." },
+        { "key": "n", "text": "Semua baris sudah dicentang: ada 10 data.", "value": 10 },
+        { "key": "sum", "text": "Jumlahkan sedikit demi sedikit: 75 + 80 + 65 + 90 + 85 = 395, lalu 395 + 70 + 80 + 95 + 60 + 100 = 800.", "value": 800 },
+        { "key": "divide", "text": "Bagi: 800 : 10 = 80.", "value": 80 },
+        { "key": "interpret", "text": "Jadi, rata-rata nilai ulangan 10 siswa itu adalah 80." }
+      ]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-03-001",
+      "givenSteps": ["n"]
+    },
+    {
+      "type": "practice",
+      "itemRefs": ["p-mean-03-002", "p-mean-03-003", "p-mean-03-004", "p-mean-03-005", "p-mean-03-006", "p-mean-03-007"]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Siswa {{ student.code }}{% endblock %}
+{% block content %}
+<p><a href="/guru/kelas">← Kembali ke {{ classroom.name }}</a></p>
+<h1>Siswa {{ student.code }}</h1>
+<p class="text-muted">Pertama aktif {{ student.first_seen | waktu }} · terakhir aktif {{ student.last_seen | waktu }}</p>
+
+<section class="card" aria-labelledby="bagian">
+  <h2 id="bagian">Bagian materi</h2>
+  <div class="table-scroll">
+    <table class="teacher-table">
+      <thead><tr><th scope="col">Bagian</th><th scope="col">Status</th><th scope="col">Usaha mental (1–9)</th></tr></thead>
+      <tbody>
+        {% for sid, title, progress, paas in subtopics %}
+        <tr>
+          <th scope="row">{{ title }}</th>
+          <td>{% if progress and progress.status == 'done' %}Selesai{% elif progress %}Sedang dipelajari{% else %}Belum dimulai{% endif %}</td>
+          <td>{% if paas is not none %}{{ paas }}{% else %}-{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p>Benar pada percobaan pertama (latihan): {% if summary.first_try_percent is not none %}<strong>{{ summary.first_try_percent }}%</strong> dari {{ summary.first_try_total }} langkah{% else %}-{% endif %}</p>
+</section>
+
+<section class="card" aria-labelledby="kesalahan">
+  <h2 id="kesalahan">Jenis kesalahan</h2>
+  {% if errors %}
+  <ul>
+    {% for code, count in errors %}
+    <li><strong>{{ error_names.get(code, code) }}</strong> ({{ code }}) — {{ count }} kali</li>
+    {% endfor %}
+  </ul>
+  {% else %}<p>Belum ada catatan kesalahan.</p>{% endif %}
+</section>
+
+<section class="card" aria-labelledby="kuis">
+  <h2 id="kuis">Kuis</h2>
+  {% if quizzes %}
+  <ol>
+    {% for q in quizzes %}
+    <li>{{ q.created_at | waktu }}: {{ q.points }} dari {{ q.max_points }} poin ({{ q.percent }}%)</li>
+    {% endfor %}
+  </ol>
+  {% else %}<p>Belum mengerjakan kuis.</p>{% endif %}
+</section>
+
+{% if leppink %}
+<section class="card" aria-labelledby="beban">
+  <h2 id="beban">Kuesioner beban kognitif (rata-rata 0–10)</h2>
+  <ul>
+    {% for dim, value in leppink.items() %}
+    <li><strong>{% if dim == 'IL' %}Intrinsik{% elif dim == 'EL' %}Ekstrinsik{% else %}Germane{% endif %} ({{ dim }})</strong>: {{ value }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="card" aria-labelledby="penjelasan">
+  <h2 id="penjelasan">Penjelasan dengan kata-kata sendiri</h2>
+  {% if explanations %}
+  {% for e in explanations %}
+  <blockquote class="explanation">
+    <p>{{ e.text }}</p>
+    <footer class="text-muted">Soal {{ e.item_id }} · {{ e.created_at | waktu }}</footer>
+  </blockquote>
+  {% endfor %}
+  {% else %}<p>Belum ada penjelasan.</p>{% endif %}
+</section>
+{% endblock %}

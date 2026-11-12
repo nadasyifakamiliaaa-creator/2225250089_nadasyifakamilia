@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "p-mean-01-001", "subtopic": "mean-01", "objective": "TP1", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Empat sahabat membawa kelereng: 2, 4, 6, dan 8 butir. Jika semua kelereng dibagi sama rata, setiap anak mendapat berapa butir?",
+    "data": [2, 4, 6, 8], "unit": "butir", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-01-001-k", "twinOf": "p-mean-01-001", "subtopic": "mean-01", "objective": "TP1", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Empat sahabat membawa kelereng: 5, 7, 6, dan 10 butir. Jika semua kelereng dibagi sama rata, setiap anak mendapat berapa butir?",
+    "data": [5, 7, 6, 10], "unit": "butir", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-01-002", "subtopic": "mean-01", "objective": "TP1", "level": "L1", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Ada 5 rak di perpustakaan kelas. Isinya 8, 12, 10, 6, dan 14 buku. Jika buku disusun ulang sama rata, setiap rak berisi berapa buku?",
+    "data": [8, 12, 10, 6, 14], "unit": "buku", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-01-002-k", "twinOf": "p-mean-01-002", "subtopic": "mean-01", "objective": "TP1", "level": "L1", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Ada 5 rak di perpustakaan kelas. Isinya 9, 11, 7, 13, dan 15 buku. Jika buku disusun ulang sama rata, setiap rak berisi berapa buku?",
+    "data": [9, 11, 7, 13, 15], "unit": "buku", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-01-003", "subtopic": "mean-01", "objective": "TP1", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Tiga kakak-beradik mendapat permen 7, 9, dan 2 butir. Mereka sepakat membagi semua permen sama rata. Berapa permen yang didapat setiap anak?",
+    "data": [7, 9, 2], "unit": "butir", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-01-003-k", "twinOf": "p-mean-01-003", "subtopic": "mean-01", "objective": "TP1", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Tiga kakak-beradik mendapat permen 10, 4, dan 7 butir. Mereka sepakat membagi semua permen sama rata. Berapa permen yang didapat setiap anak?",
+    "data": [10, 4, 7], "unit": "butir", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-01-004", "subtopic": "mean-01", "objective": "TP1", "level": "L3", "context": "personal",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata tabungan empat anak adalah Rp5.000. Apa arti pernyataan ini?",
+    "options": [
+      { "text": "Jika semua tabungan dikumpulkan lalu dibagi sama rata, setiap anak mendapat Rp5.000.", "correct": true,
+        "feedback": "Tepat. Rata-rata adalah hasil bagi sama rata." },
+      { "text": "Setiap anak pasti menabung tepat Rp5.000.", "correct": false,
+        "feedback": "Belum tepat. Tabungan setiap anak bisa berbeda-beda. Rata-rata adalah nilai jika semuanya dibagi sama rata." },
+      { "text": "Tabungan anak yang paling banyak adalah Rp5.000.", "correct": false,
+        "feedback": "Belum tepat. Biasanya ada anak yang tabungannya lebih dari rata-rata dan ada yang kurang." }
+    ]
+  },
+  {
+    "id": "p-mean-01-004-k", "twinOf": "p-mean-01-004", "subtopic": "mean-01", "objective": "TP1", "level": "L3", "context": "ilmiah",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata tinggi tiga tanaman cabai adalah 12 cm. Mungkinkah ada tanaman yang tingginya lebih dari 12 cm?",
+    "options": [
+      { "text": "Mungkin. Bisa ada yang lebih tinggi dan ada yang lebih pendek dari 12 cm.", "correct": true,
+        "feedback": "Tepat. Rata-rata adalah tinggi jika semuanya dibuat sama rata, jadi tinggi aslinya bisa berbeda-beda." },
+      { "text": "Tidak mungkin, karena semua tanaman tingginya 12 cm.", "correct": false,
+        "feedback": "Belum tepat. Rata-rata 12 cm tidak berarti semua tanaman tingginya 12 cm." },
+      { "text": "Tidak mungkin, karena rata-rata adalah tinggi yang paling besar.", "correct": false,
+        "feedback": "Belum tepat. Rata-rata berada di antara data terkecil dan terbesar, bukan yang paling besar." }
+    ]
+  },
+
+  {
+    "id": "p-mean-02-001", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Tinggi tanaman kacang Budi selama 4 minggu adalah 6 cm, 9 cm, 11 cm, dan 14 cm. Berapa rata-rata tingginya?",
+    "data": [6, 9, 11, 14], "unit": "cm", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-001-k", "twinOf": "p-mean-02-001", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Tinggi tanaman kacang Lina selama 4 minggu adalah 7 cm, 8 cm, 12 cm, dan 17 cm. Berapa rata-rata tingginya?",
+    "data": [7, 8, 12, 17], "unit": "cm", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-002", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Nilai kuis matematika Dimas adalah 65, 80, 75, 90, dan 70. Berapa nilai rata-rata kuis Dimas?",
+    "data": [65, 80, 75, 90, 70], "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-002-k", "twinOf": "p-mean-02-002", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Nilai kuis IPA Dimas adalah 85, 70, 95, 80, dan 75. Berapa nilai rata-rata kuis IPA Dimas?",
+    "data": [85, 70, 95, 80, 75], "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-003", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Selama 6 hari, Sari lari pagi sejauh 3 km, 4 km, 2 km, 5 km, 4 km, dan 6 km. Berapa rata-rata jarak larinya setiap hari?",
+    "data": [3, 4, 2, 5, 4, 6], "unit": "km", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-003-k", "twinOf": "p-mean-02-003", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Selama 6 hari, Bayu bersepeda sejauh 5 km, 3 km, 4 km, 6 km, 7 km, dan 5 km. Berapa rata-rata jarak bersepedanya setiap hari?",
+    "data": [5, 3, 4, 6, 7, 5], "unit": "km", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-004", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Banyak pengunjung perpustakaan sekolah selama 5 hari adalah 32, 28, 40, 35, dan 25 orang. Berapa rata-rata pengunjung per hari?",
+    "data": [32, 28, 40, 35, 25], "unit": "orang", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-004-k", "twinOf": "p-mean-02-004", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Banyak pengunjung UKS selama 5 hari adalah 41, 37, 30, 44, dan 33 orang. Berapa rata-rata pengunjung per hari?",
+    "data": [41, 37, 30, 44, 33], "unit": "orang", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-005", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "pekerjaan",
+    "type": "stepwise_mean",
+    "prompt": "Pak Joko menimbang 4 buah semangka. Beratnya 3 kg, 5 kg, 4 kg, dan 6 kg. Berapa rata-rata berat semangka itu?",
+    "data": [3, 5, 4, 6], "unit": "kg", "decimals": 1, "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-005-k", "twinOf": "p-mean-02-005", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "pekerjaan",
+    "type": "stepwise_mean",
+    "prompt": "Bu Wati menimbang 4 buah melon. Beratnya 2 kg, 5 kg, 3 kg, dan 4 kg. Berapa rata-rata berat melon itu?",
+    "data": [2, 5, 3, 4], "unit": "kg", "decimals": 1, "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-006", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Suhu udara sebuah kota pada pukul 12.00 selama 5 hari adalah 30, 32, 31, 29, dan 33 derajat Celsius. Berapa rata-rata suhunya?",
+    "data": [30, 32, 31, 29, 33], "unit": "°C", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-006-k", "twinOf": "p-mean-02-006", "subtopic": "mean-02", "objective": "TP3", "level": "L1", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Suhu udara sebuah kota pada pukul 07.00 selama 5 hari adalah 28, 31, 30, 33, dan 28 derajat Celsius. Berapa rata-rata suhunya?",
+    "data": [28, 31, 30, 33, 28], "unit": "°C", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-02-007", "subtopic": "mean-02", "objective": "TP3", "level": "L2", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Uang saku Sinta dari Senin sampai Jumat adalah Rp10.000, Rp12.000, Rp8.000, Rp15.000, dan Rp10.000. Berapa rata-rata uang sakunya per hari?",
+    "data": [10000, 12000, 8000, 15000, 10000], "unit": "rupiah", "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Apa arti rata-rata uang saku Sinta?",
+      "options": [
+        { "text": "Jika uang saku lima hari dibagi sama rata, setiap hari Sinta mendapat Rp11.000.", "correct": true,
+          "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap hari Sinta pasti mendapat Rp11.000.", "correct": false,
+          "feedback": "Belum tepat. Pada hari Rabu Sinta hanya mendapat Rp8.000." },
+        { "text": "Uang saku Sinta paling banyak Rp11.000 sehari.", "correct": false,
+          "feedback": "Belum tepat. Pada hari Kamis Sinta mendapat Rp15.000." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-02-007-k", "twinOf": "p-mean-02-007", "subtopic": "mean-02", "objective": "TP3", "level": "L2", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Uang saku Rudi dari Senin sampai Jumat adalah Rp12.000, Rp9.000, Rp11.000, Rp16.000, dan Rp12.000. Berapa rata-rata uang sakunya per hari?",
+    "data": [12000, 9000, 11000, 16000, 12000], "unit": "rupiah", "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Apa arti rata-rata uang saku Rudi?",
+      "options": [
+        { "text": "Jika uang saku lima hari dibagi sama rata, setiap hari Rudi mendapat Rp12.000.", "correct": true,
+          "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap hari Rudi pasti mendapat Rp12.000.", "correct": false,
+          "feedback": "Belum tepat. Pada hari Selasa Rudi hanya mendapat Rp9.000." },
+        { "text": "Uang saku Rudi paling banyak Rp12.000 sehari.", "correct": false,
+          "feedback": "Belum tepat. Pada hari Kamis Rudi mendapat Rp16.000." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-02-008", "subtopic": "mean-02", "objective": "TP3", "level": "L2", "context": "personal",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata nilai ulangan Rani (70, 80, 75, 85, dan 90) adalah 80. Pernyataan mana yang benar?",
+    "options": [
+      { "text": "Jika semua nilai Rani disamaratakan, setiap nilai menjadi 80.", "correct": true,
+        "feedback": "Tepat. Rata-rata adalah nilai jika semuanya dibuat sama rata." },
+      { "text": "Rani selalu mendapat nilai 80.", "correct": false,
+        "feedback": "Belum tepat. Nilai Rani berbeda-beda, misalnya 70 dan 90." },
+      { "text": "Nilai tertinggi Rani adalah 80.", "correct": false,
+        "feedback": "Belum tepat. Nilai tertinggi Rani adalah 90." }
+    ]
+  },
+  {
+    "id": "p-mean-02-008-k", "twinOf": "p-mean-02-008", "subtopic": "mean-02", "objective": "TP3", "level": "L2", "context": "sosial",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata tinggi badan 5 siswa (150, 155, 148, 160, dan 152 cm) adalah 153 cm. Pernyataan mana yang benar?",
+    "options": [
+      { "text": "Rata-rata 153 cm berada di antara tinggi terendah (148 cm) dan tertinggi (160 cm).", "correct": true,
+        "feedback": "Tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+      { "text": "Semua siswa tingginya 153 cm.", "correct": false,
+        "feedback": "Belum tepat. Tinggi siswa berbeda-beda, dari 148 cm sampai 160 cm." },
+      { "text": "Tidak ada siswa yang lebih tinggi dari 153 cm.", "correct": false,
+        "feedback": "Belum tepat. Ada siswa yang tingginya 160 cm." }
+    ]
+  },
+
+  {
+    "id": "p-mean-03-001", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Banyak halaman buku yang dibaca Nisa setiap hari selama 8 hari: 12, 15, 10, 18, 14, 16, 11, dan 16. Berapa rata-rata halaman yang dibaca per hari?",
+    "data": [12, 15, 10, 18, 14, 16, 11, 16], "unit": "halaman", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-001-k", "twinOf": "p-mean-03-001", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Banyak halaman buku yang dibaca Fajar setiap hari selama 8 hari: 20, 14, 18, 22, 16, 19, 15, dan 20. Berapa rata-rata halaman yang dibaca per hari?",
+    "data": [20, 14, 18, 22, 16, 19, 15, 20], "unit": "halaman", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-002", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Sampah plastik yang dikumpulkan 10 kelas dalam seminggu (dalam kg): 4, 6, 3, 5, 7, 4, 8, 5, 6, dan 2. Berapa rata-rata sampah plastik per kelas?",
+    "data": [4, 6, 3, 5, 7, 4, 8, 5, 6, 2], "unit": "kg", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-002-k", "twinOf": "p-mean-03-002", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Sampah kertas yang dikumpulkan 10 kelas dalam seminggu (dalam kg): 5, 7, 4, 6, 9, 3, 8, 6, 7, dan 5. Berapa rata-rata sampah kertas per kelas?",
+    "data": [5, 7, 4, 6, 9, 3, 8, 6, 7, 5], "unit": "kg", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-003", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Tinggi 12 bibit jagung setelah dua minggu (dalam cm): 15, 18, 20, 17, 16, 19, 21, 18, 17, 20, 16, dan 19. Berapa rata-rata tinggi bibit jagung itu?",
+    "data": [15, 18, 20, 17, 16, 19, 21, 18, 17, 20, 16, 19], "unit": "cm", "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-003-k", "twinOf": "p-mean-03-003", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Tinggi 12 bibit cabai setelah dua minggu (dalam cm): 10, 13, 12, 11, 14, 12, 15, 13, 11, 12, 14, dan 13. Berapa rata-rata tinggi bibit cabai itu?",
+    "data": [10, 13, 12, 11, 14, 12, 15, 13, 11, 12, 14, 13], "unit": "cm", "decimals": 1, "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-004", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "pekerjaan",
+    "type": "stepwise_mean",
+    "prompt": "Hasil panen tomat Pak Budi selama 8 hari (dalam kg): 12, 15, 11, 14, 13, 16, 12, dan 15. Berapa rata-rata hasil panennya per hari?",
+    "data": [12, 15, 11, 14, 13, 16, 12, 15], "unit": "kg", "decimals": 1, "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-004-k", "twinOf": "p-mean-03-004", "subtopic": "mean-03", "objective": "TP3", "level": "L1", "context": "pekerjaan",
+    "type": "stepwise_mean",
+    "prompt": "Hasil panen cabai Bu Ani selama 8 hari (dalam kg): 7, 9, 6, 8, 10, 7, 9, dan 12. Berapa rata-rata hasil panennya per hari?",
+    "data": [7, 9, 6, 8, 10, 7, 9, 12], "unit": "kg", "decimals": 1, "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-03-005", "subtopic": "mean-03", "objective": "TP3", "level": "L2", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Lama tidur Rina selama 10 malam (dalam jam): 8, 7, 9, 6, 8, 7, 8, 9, 6, dan 7. Berapa rata-rata lama tidurnya setiap malam?",
+    "data": [8, 7, 9, 6, 8, 7, 8, 9, 6, 7], "unit": "jam", "decimals": 1, "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Anak seusia Rina disarankan tidur minimal 8 jam setiap malam. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata tidur Rina 7,5 jam, kurang dari 8 jam. Rina sebaiknya menambah waktu tidurnya.", "correct": true,
+          "feedback": "Tepat. Rata-rata membantu kita melihat kebiasaan tidur Rina secara keseluruhan." },
+        { "text": "Rina selalu tidur 7,5 jam setiap malam.", "correct": false,
+          "feedback": "Belum tepat. Ada malam Rina tidur 9 jam dan ada malam hanya 6 jam." },
+        { "text": "Rina tidak pernah tidur 8 jam.", "correct": false,
+          "feedback": "Belum tepat. Ada 3 malam Rina tidur 8 jam." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-03-005-k", "twinOf": "p-mean-03-005", "subtopic": "mean-03", "objective": "TP3", "level": "L2", "context": "personal",
+    "type": "stepwise_mean",
+    "prompt": "Lama belajar Dani di rumah selama 10 hari (dalam menit): 40, 60, 30, 50, 45, 55, 35, 60, 50, dan 45. Berapa rata-rata lama belajarnya per hari?",
+    "data": [40, 60, 30, 50, 45, 55, 35, 60, 50, 45], "unit": "menit", "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Guru menyarankan belajar di rumah minimal 45 menit sehari. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata lama belajar Dani 47 menit, sudah lebih dari 45 menit.", "correct": true,
+          "feedback": "Tepat. Secara rata-rata, Dani sudah memenuhi saran guru." },
+        { "text": "Dani selalu belajar lebih dari 45 menit setiap hari.", "correct": false,
+          "feedback": "Belum tepat. Ada hari Dani hanya belajar 30 menit." },
+        { "text": "Dani belajar tepat 47 menit setiap hari.", "correct": false,
+          "feedback": "Belum tepat. Lama belajar Dani berbeda-beda, dari 30 sampai 60 menit." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-03-006", "subtopic": "mean-03", "objective": "TP3", "level": "L2", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Banyak siswa yang meminjam buku di perpustakaan selama 10 hari sekolah: 12, 8, 15, 10, 9, 14, 11, 13, 7, dan 11. Berapa rata-rata peminjam per hari?",
+    "data": [12, 8, 15, 10, 9, 14, 11, 13, 7, 11], "unit": "siswa", "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Bulan lalu, rata-rata peminjam adalah 9 siswa per hari. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Secara rata-rata, peminjam buku bertambah dari 9 menjadi 11 siswa per hari.", "correct": true,
+          "feedback": "Tepat. Rata-rata memudahkan kita membandingkan dua kelompok data." },
+        { "text": "Setiap hari, peminjam buku lebih dari 9 siswa.", "correct": false,
+          "feedback": "Belum tepat. Ada hari yang peminjamnya hanya 8 dan 7 siswa." },
+        { "text": "Peminjam buku berkurang dibanding bulan lalu.", "correct": false,
+          "feedback": "Belum tepat. Rata-ratanya naik dari 9 menjadi 11." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-03-006-k", "twinOf": "p-mean-03-006", "subtopic": "mean-03", "objective": "TP3", "level": "L2", "context": "sosial",
+    "type": "stepwise_mean",
+    "prompt": "Banyak pengunjung kantin sekolah saat istirahat selama 10 hari: 45, 52, 48, 50, 55, 47, 53, 49, 51, dan 50 orang. Berapa rata-rata pengunjung per hari?",
+    "data": [45, 52, 48, 50, 55, 47, 53, 49, 51, 50], "unit": "orang", "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Bulan lalu, rata-rata pengunjung kantin adalah 54 orang per hari. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Secara rata-rata, pengunjung kantin berkurang dari 54 menjadi 50 orang per hari.", "correct": true,
+          "feedback": "Tepat. Rata-rata memudahkan kita membandingkan dua kelompok data." },
+        { "text": "Setiap hari, pengunjung kantin kurang dari 54 orang.", "correct": false,
+          "feedback": "Belum tepat. Ada hari dengan 55 pengunjung." },
+        { "text": "Pengunjung kantin bertambah dibanding bulan lalu.", "correct": false,
+          "feedback": "Belum tepat. Rata-ratanya turun dari 54 menjadi 50." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-03-007", "subtopic": "mean-03", "objective": "TP3", "level": "L2", "context": "ilmiah",
+    "type": "stepwise_mean",
+    "prompt": "Curah hujan di sebuah desa selama 8 hari (dalam mm): 12, 0, 5, 20, 8, 0, 15, dan 4. Berapa rata-rata curah hujan per hari?",
+    "data": [12, 0, 5, 20, 8, 0, 15, 4], "unit": "mm", "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Apakah setiap hari di desa itu turun hujan 8 mm?",
+      "options": [
+        { "text": "Tidak. Ada hari tanpa hujan (0 mm) dan ada hari dengan 20 mm. 8 mm adalah rata-ratanya.", "correct": true,
+          "feedback": "Tepat. Rata-rata tidak berarti setiap hari sama." },
+        { "text": "Ya, karena rata-ratanya 8 mm.", "correct": false,
+          "feedback": "Belum tepat. Lihat datanya: ada hari 0 mm dan ada hari 20 mm." },
+        { "text": "Tidak, karena hari tanpa hujan seharusnya tidak dihitung.", "correct": false,
+          "feedback": "Belum tepat. Hari tanpa hujan tetap data, yaitu 0 mm, dan ikut dihitung." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-03-007-k", "twinOf": "p-mean-03-007", "subtopic": "mean-03", "objective": "TP3", "level": "L2", "context": "pekerjaan",
+    "type": "stepwise_mean",
+    "prompt": "Banyak ikan yang ditangkap Pak Darto selama 8 hari (dalam ekor): 25, 0, 18, 30, 0, 22, 15, dan 10. Berapa rata-rata tangkapannya per hari?",
+    "data": [25, 0, 18, 30, 0, 22, 15, 10], "unit": "ekor", "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Apakah setiap hari Pak Darto menangkap 15 ekor ikan?",
+      "options": [
+        { "text": "Tidak. Ada hari tanpa tangkapan (0 ekor) dan ada hari 30 ekor. 15 ekor adalah rata-ratanya.", "correct": true,
+          "feedback": "Tepat. Rata-rata tidak berarti setiap hari sama." },
+        { "text": "Ya, karena rata-ratanya 15 ekor.", "correct": false,
+          "feedback": "Belum tepat. Lihat datanya: ada hari 0 ekor dan ada hari 30 ekor." },
+        { "text": "Tidak, karena hari tanpa tangkapan seharusnya tidak dihitung.", "correct": false,
+          "feedback": "Belum tepat. Hari tanpa tangkapan tetap data, yaitu 0 ekor, dan ikut dihitung." }
+      ]
+    }
+  },
+
+  {
+    "id": "p-mean-04-001", "subtopic": "mean-04", "objective": "TP4", "level": "L1", "context": "sosial",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan banyak anggota keluarga siswa kelas 8B. Berapa rata-rata banyak anggota keluarga mereka?",
+    "table": [{ "x": 3, "f": 4 }, { "x": 4, "f": 8 }, { "x": 5, "f": 6 }, { "x": 6, "f": 2 }],
+    "valueLabel": "Anggota keluarga", "frequencyLabel": "Banyak siswa", "unit": "orang", "decimals": 1,
+    "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-04-001-k", "twinOf": "p-mean-04-001", "subtopic": "mean-04", "objective": "TP4", "level": "L1", "context": "sosial",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan banyak anggota keluarga siswa kelas 8C. Berapa rata-rata banyak anggota keluarga mereka?",
+    "table": [{ "x": 2, "f": 2 }, { "x": 3, "f": 8 }, { "x": 4, "f": 6 }, { "x": 5, "f": 4 }],
+    "valueLabel": "Anggota keluarga", "frequencyLabel": "Banyak siswa", "unit": "orang", "decimals": 1,
+    "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-04-002", "subtopic": "mean-04", "objective": "TP4", "level": "L1", "context": "personal",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan nilai ulangan IPA siswa kelas 8B. Berapa nilai rata-rata kelas itu?",
+    "table": [{ "x": 60, "f": 2 }, { "x": 70, "f": 5 }, { "x": 80, "f": 8 }, { "x": 90, "f": 4 }, { "x": 100, "f": 1 }],
+    "valueLabel": "Nilai", "frequencyLabel": "Banyak siswa", "decimals": 1,
+    "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-04-002-k", "twinOf": "p-mean-04-002", "subtopic": "mean-04", "objective": "TP4", "level": "L1", "context": "personal",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan nilai ulangan IPS siswa kelas 8C. Berapa nilai rata-rata kelas itu?",
+    "table": [{ "x": 60, "f": 3 }, { "x": 70, "f": 4 }, { "x": 80, "f": 6 }, { "x": 90, "f": 5 }, { "x": 100, "f": 2 }],
+    "valueLabel": "Nilai", "frequencyLabel": "Banyak siswa", "decimals": 1,
+    "steps": ["n", "sum", "divide"]
+  },
+  {
+    "id": "p-mean-04-003", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "sosial",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan banyak buku yang dibaca siswa kelas 8D dalam sebulan. Berapa rata-rata buku yang dibaca setiap siswa?",
+    "table": [{ "x": 1, "f": 5 }, { "x": 2, "f": 9 }, { "x": 3, "f": 7 }, { "x": 4, "f": 3 }, { "x": 5, "f": 1 }],
+    "valueLabel": "Banyak buku", "frequencyLabel": "Banyak siswa", "unit": "buku", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Sekolah menargetkan setiap siswa membaca minimal 3 buku sebulan. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata kelas 8D sekitar 2,4 buku, masih di bawah target 3 buku.", "correct": true,
+          "feedback": "Tepat. Secara rata-rata, kelas 8D belum mencapai target." },
+        { "text": "Tidak ada siswa kelas 8D yang membaca 3 buku atau lebih.", "correct": false,
+          "feedback": "Belum tepat. Ada 7 siswa yang membaca 3 buku, 3 siswa membaca 4 buku, dan 1 siswa membaca 5 buku." },
+        { "text": "Setiap siswa kelas 8D membaca 2,4 buku.", "correct": false,
+          "feedback": "Belum tepat. Banyak buku tidak mungkin 2,4. Angka itu hanya rata-ratanya." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-04-003-k", "twinOf": "p-mean-04-003", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "sosial",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan banyak buku yang dibaca siswa kelas 8E dalam sebulan. Berapa rata-rata buku yang dibaca setiap siswa?",
+    "table": [{ "x": 1, "f": 2 }, { "x": 2, "f": 6 }, { "x": 3, "f": 9 }, { "x": 4, "f": 5 }, { "x": 5, "f": 3 }],
+    "valueLabel": "Banyak buku", "frequencyLabel": "Banyak siswa", "unit": "buku", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Sekolah menargetkan setiap siswa membaca minimal 3 buku sebulan. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata kelas 8E sekitar 3 buku, sudah mencapai target 3 buku.", "correct": true,
+          "feedback": "Tepat. Secara rata-rata, kelas 8E sudah mencapai target." },
+        { "text": "Semua siswa kelas 8E membaca minimal 3 buku.", "correct": false,
+          "feedback": "Belum tepat. Ada 2 siswa yang membaca 1 buku dan 6 siswa yang membaca 2 buku." },
+        { "text": "Tidak ada siswa kelas 8E yang membaca 5 buku.", "correct": false,
+          "feedback": "Belum tepat. Ada 3 siswa yang membaca 5 buku." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-04-004", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "pekerjaan",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan penjualan es teh di kantin selama 30 hari. Berapa rata-rata es teh yang terjual per hari?",
+    "table": [{ "x": 20, "f": 6 }, { "x": 25, "f": 10 }, { "x": 30, "f": 9 }, { "x": 35, "f": 5 }],
+    "valueLabel": "Gelas terjual", "frequencyLabel": "Banyak hari", "unit": "gelas", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Ibu kantin ingin menyiapkan bahan es teh setiap hari. Berapa gelas yang paling masuk akal untuk disiapkan?",
+      "options": [
+        { "text": "Sekitar 27 sampai 28 gelas, karena rata-rata penjualannya sekitar 27,2 gelas per hari.", "correct": true,
+          "feedback": "Tepat. Rata-rata membantu memperkirakan kebutuhan sehari-hari." },
+        { "text": "Tepat 35 gelas, karena itu penjualan tertinggi.", "correct": false,
+          "feedback": "Belum tepat. Penjualan 35 gelas hanya terjadi 5 hari dari 30 hari." },
+        { "text": "4 gelas, karena tabelnya punya 4 baris.", "correct": false,
+          "feedback": "Belum tepat. Banyak baris tabel bukan banyak gelas yang terjual." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-04-004-k", "twinOf": "p-mean-04-004", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "pekerjaan",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan penjualan roti di kantin selama 30 hari. Berapa rata-rata roti yang terjual per hari?",
+    "table": [{ "x": 15, "f": 4 }, { "x": 20, "f": 8 }, { "x": 25, "f": 12 }, { "x": 30, "f": 6 }],
+    "valueLabel": "Roti terjual", "frequencyLabel": "Banyak hari", "unit": "roti", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Ibu kantin ingin menyiapkan roti setiap hari. Berapa roti yang paling masuk akal untuk disiapkan?",
+      "options": [
+        { "text": "Sekitar 23 sampai 24 roti, karena rata-rata penjualannya sekitar 23,3 roti per hari.", "correct": true,
+          "feedback": "Tepat. Rata-rata membantu memperkirakan kebutuhan sehari-hari." },
+        { "text": "Tepat 30 roti, karena itu penjualan tertinggi.", "correct": false,
+          "feedback": "Belum tepat. Penjualan 30 roti hanya terjadi 6 hari dari 30 hari." },
+        { "text": "4 roti, karena tabelnya punya 4 baris.", "correct": false,
+          "feedback": "Belum tepat. Banyak baris tabel bukan banyak roti yang terjual." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-04-005", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "ilmiah",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan suhu udara siang hari di sebuah kota selama 14 hari. Berapa rata-rata suhunya?",
+    "table": [{ "x": 28, "f": 3 }, { "x": 29, "f": 4 }, { "x": 30, "f": 5 }, { "x": 31, "f": 2 }],
+    "valueLabel": "Suhu", "frequencyLabel": "Banyak hari", "unit": "°C", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata suhunya sekitar 29,4 °C, di antara suhu terendah 28 °C dan tertinggi 31 °C.", "correct": true,
+          "feedback": "Tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+        { "text": "Rata-ratanya 29,5 °C, yaitu (28 + 29 + 30 + 31) : 4.", "correct": false,
+          "feedback": "Belum tepat. Cara itu tidak memperhatikan frekuensi. Suhu 30 °C muncul 5 kali, jadi harus dihitung 5 kali." },
+        { "text": "Rata-ratanya 3,5 °C, yaitu 14 : 4.", "correct": false,
+          "feedback": "Belum tepat. 14 adalah banyak hari, bukan jumlah semua suhu." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-04-005-k", "twinOf": "p-mean-04-005", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "ilmiah",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan berat 16 ekor kucing di tempat penampungan hewan. Berapa rata-rata berat kucing itu?",
+    "table": [{ "x": 3, "f": 5 }, { "x": 4, "f": 6 }, { "x": 5, "f": 4 }, { "x": 6, "f": 1 }],
+    "valueLabel": "Berat", "frequencyLabel": "Banyak kucing", "unit": "kg", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata beratnya sekitar 4,1 kg, di antara berat terendah 3 kg dan tertinggi 6 kg.", "correct": true,
+          "feedback": "Tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+        { "text": "Rata-ratanya 4,5 kg, yaitu (3 + 4 + 5 + 6) : 4.", "correct": false,
+          "feedback": "Belum tepat. Cara itu tidak memperhatikan frekuensi. Berat 4 kg dimiliki 6 kucing, jadi harus dihitung 6 kali." },
+        { "text": "Rata-ratanya 16 kg, karena ada 16 kucing.", "correct": false,
+          "feedback": "Belum tepat. 16 adalah banyak kucing, bukan rata-rata beratnya." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-04-006", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "personal",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan uang saku harian siswa kelas 8F (dalam ribu rupiah). Berapa rata-rata uang saku mereka?",
+    "table": [{ "x": 5, "f": 4 }, { "x": 10, "f": 12 }, { "x": 15, "f": 8 }, { "x": 20, "f": 6 }],
+    "valueLabel": "Uang saku", "frequencyLabel": "Banyak siswa", "unit": "ribu rupiah", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Rina, siswa kelas 8F, mendapat uang saku Rp10.000 sehari. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Uang saku Rina di bawah rata-rata kelasnya, yaitu sekitar Rp12.700.", "correct": true,
+          "feedback": "Tepat. 10 ribu lebih kecil daripada rata-rata 12,7 ribu." },
+        { "text": "Uang saku Rina paling kecil di kelasnya.", "correct": false,
+          "feedback": "Belum tepat. Ada 4 siswa yang uang sakunya 5 ribu, lebih kecil daripada Rina." },
+        { "text": "Uang saku Rina pasti sama dengan rata-rata, karena paling banyak siswa mendapat 10 ribu.", "correct": false,
+          "feedback": "Belum tepat. Paling banyak siswa memang mendapat 10 ribu, tetapi rata-ratanya sekitar 12,7 ribu." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-04-006-k", "twinOf": "p-mean-04-006", "subtopic": "mean-04", "objective": "TP4", "level": "L2", "context": "personal",
+    "type": "frequency_mean",
+    "prompt": "Tabel menunjukkan uang saku harian siswa kelas 8G (dalam ribu rupiah). Berapa rata-rata uang saku mereka?",
+    "table": [{ "x": 5, "f": 3 }, { "x": 10, "f": 10 }, { "x": 15, "f": 12 }, { "x": 20, "f": 5 }],
+    "valueLabel": "Uang saku", "frequencyLabel": "Banyak siswa", "unit": "ribu rupiah", "decimals": 1,
+    "steps": ["n", "sum", "divide", "interpret"],
+    "interpret": {
+      "question": "Dodi, siswa kelas 8G, mendapat uang saku Rp15.000 sehari. Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Uang saku Dodi di atas rata-rata kelasnya, yaitu sekitar Rp13.200.", "correct": true,
+          "feedback": "Tepat. 15 ribu lebih besar daripada rata-rata 13,2 ribu." },
+        { "text": "Uang saku Dodi paling besar di kelasnya.", "correct": false,
+          "feedback": "Belum tepat. Ada 5 siswa yang uang sakunya 20 ribu." },
+        { "text": "Uang saku Dodi pasti sama dengan rata-rata, karena paling banyak siswa mendapat 15 ribu.", "correct": false,
+          "feedback": "Belum tepat. Paling banyak siswa memang mendapat 15 ribu, tetapi rata-ratanya sekitar 13,2 ribu." }
+      ]
+    }
+  },
+
+  {
+    "id": "p-mean-02-se1", "subtopic": "mean-02", "objective": "TP3", "level": "L1",
+    "type": "self_explain",
+    "prompt": "Nilai ulangan Rani adalah 70, 80, 75, 85, dan 90. Jumlahnya 400. Jelaskan kepada temanmu: mengapa 400 dibagi 5, bukan dibagi 4?",
+    "freeText": true
+  },
+
+  {
+    "id": "p-mean-05-001", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "pekerjaan",
+    "type": "story_mean",
+    "prompt": "Koperasi sekolah buka sejak tahun [[y]]. Minggu ini koperasi menjual [[a]] buku tulis pada hari Senin, [[b]] pada hari Selasa, [[c]] pada hari Rabu, [[d]] pada hari Kamis, dan [[e]] pada hari Jumat. Harga satu buku [[p]] rupiah. Berapa rata-rata buku tulis yang terjual per hari?",
+    "selectables": {
+      "y": { "display": "2015", "value": 2015, "relevant": false, "meaning": "tahun koperasi mulai buka" },
+      "a": { "display": "18", "value": 18, "relevant": true },
+      "b": { "display": "25", "value": 25, "relevant": true },
+      "c": { "display": "20", "value": 20, "relevant": true },
+      "d": { "display": "22", "value": 22, "relevant": true },
+      "e": { "display": "15", "value": 15, "relevant": true },
+      "p": { "display": "4.000", "value": 4000, "relevant": false, "meaning": "harga satu buku tulis" }
+    },
+    "unit": "buku",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata buku tulis yang terjual per hari", "correct": true, "feedback": "Tepat. Fokuskan perhatian pada banyak buku yang terjual setiap hari." },
+        { "text": "Harga rata-rata satu buku tulis", "correct": false, "feedback": "Belum tepat. Harga buku sudah diketahui. Baca lagi kalimat terakhir soal." },
+        { "text": "Jumlah uang hasil penjualan", "correct": false, "feedback": "Belum tepat. Soal tidak menanyakan uang. Baca lagi kalimat terakhir soal." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika penjualan lima hari dibagi sama rata, setiap hari terjual 20 buku tulis.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap hari pasti terjual tepat 20 buku tulis.", "correct": false, "feedback": "Belum tepat. Hari Jumat hanya terjual 15 buku." },
+        { "text": "Penjualan paling banyak dalam sehari adalah 20 buku.", "correct": false, "feedback": "Belum tepat. Hari Selasa terjual 25 buku." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-001-k", "twinOf": "p-mean-05-001", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "pekerjaan",
+    "type": "story_mean",
+    "prompt": "Koperasi sekolah buka sejak tahun [[y]]. Minggu ini koperasi menjual [[a]] pulpen pada hari Senin, [[b]] pada hari Selasa, [[c]] pada hari Rabu, [[d]] pada hari Kamis, dan [[e]] pada hari Jumat. Harga satu pulpen [[p]] rupiah. Berapa rata-rata pulpen yang terjual per hari?",
+    "selectables": {
+      "y": { "display": "2018", "value": 2018, "relevant": false, "meaning": "tahun koperasi mulai buka" },
+      "a": { "display": "30", "value": 30, "relevant": true },
+      "b": { "display": "26", "value": 26, "relevant": true },
+      "c": { "display": "34", "value": 34, "relevant": true },
+      "d": { "display": "28", "value": 28, "relevant": true },
+      "e": { "display": "32", "value": 32, "relevant": true },
+      "p": { "display": "3.000", "value": 3000, "relevant": false, "meaning": "harga satu pulpen" }
+    },
+    "unit": "pulpen",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata pulpen yang terjual per hari", "correct": true, "feedback": "Tepat. Fokuskan perhatian pada banyak pulpen yang terjual setiap hari." },
+        { "text": "Harga rata-rata satu pulpen", "correct": false, "feedback": "Belum tepat. Harga pulpen sudah diketahui. Baca lagi kalimat terakhir soal." },
+        { "text": "Jumlah uang hasil penjualan", "correct": false, "feedback": "Belum tepat. Soal tidak menanyakan uang. Baca lagi kalimat terakhir soal." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika penjualan lima hari dibagi sama rata, setiap hari terjual 30 pulpen.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap hari pasti terjual tepat 30 pulpen.", "correct": false, "feedback": "Belum tepat. Hari Selasa hanya terjual 26 pulpen." },
+        { "text": "Penjualan paling banyak dalam sehari adalah 30 pulpen.", "correct": false, "feedback": "Belum tepat. Hari Rabu terjual 34 pulpen." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-002", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "sosial",
+    "type": "story_mean",
+    "prompt": "Kelas 8A mengumpulkan buku untuk perpustakaan desa. Siswa dengan nomor absen [[no]] bertugas mencatat. Kelompok pertama membawa [[a]] buku, kelompok kedua [[b]] buku, kelompok ketiga [[c]] buku, dan kelompok keempat [[d]] buku. Berapa rata-rata buku yang dibawa setiap kelompok?",
+    "selectables": {
+      "no": { "display": "12", "value": 12, "relevant": false, "meaning": "nomor absen siswa yang mencatat" },
+      "a": { "display": "14", "value": 14, "relevant": true },
+      "b": { "display": "9", "value": 9, "relevant": true },
+      "c": { "display": "11", "value": 11, "relevant": true },
+      "d": { "display": "18", "value": 18, "relevant": true }
+    },
+    "unit": "buku",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata buku yang dibawa setiap kelompok", "correct": true, "feedback": "Tepat. Yang dihitung adalah buku dari setiap kelompok." },
+        { "text": "Banyak siswa di kelas 8A", "correct": false, "feedback": "Belum tepat. Soal tidak menanyakan banyak siswa. Baca lagi kalimat terakhir soal." },
+        { "text": "Nomor absen siswa yang mencatat", "correct": false, "feedback": "Belum tepat. Nomor absen hanya keterangan tambahan." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika semua buku dibagi sama rata, setiap kelompok membawa 13 buku.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap kelompok membawa tepat 13 buku.", "correct": false, "feedback": "Belum tepat. Kelompok kedua hanya membawa 9 buku." },
+        { "text": "Tidak ada kelompok yang membawa lebih dari 13 buku.", "correct": false, "feedback": "Belum tepat. Kelompok keempat membawa 18 buku." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-002-k", "twinOf": "p-mean-05-002", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "sosial",
+    "type": "story_mean",
+    "prompt": "Kelas 8B mengumpulkan botol plastik untuk bank sampah. Siswa dengan nomor absen [[no]] bertugas mencatat. Kelompok pertama membawa [[a]] botol, kelompok kedua [[b]] botol, kelompok ketiga [[c]] botol, dan kelompok keempat [[d]] botol. Berapa rata-rata botol yang dibawa setiap kelompok?",
+    "selectables": {
+      "no": { "display": "7", "value": 7, "relevant": false, "meaning": "nomor absen siswa yang mencatat" },
+      "a": { "display": "26", "value": 26, "relevant": true },
+      "b": { "display": "32", "value": 32, "relevant": true },
+      "c": { "display": "21", "value": 21, "relevant": true },
+      "d": { "display": "29", "value": 29, "relevant": true }
+    },
+    "unit": "botol",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata botol yang dibawa setiap kelompok", "correct": true, "feedback": "Tepat. Yang dihitung adalah botol dari setiap kelompok." },
+        { "text": "Banyak siswa di kelas 8B", "correct": false, "feedback": "Belum tepat. Soal tidak menanyakan banyak siswa. Baca lagi kalimat terakhir soal." },
+        { "text": "Nomor absen siswa yang mencatat", "correct": false, "feedback": "Belum tepat. Nomor absen hanya keterangan tambahan." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika semua botol dibagi sama rata, setiap kelompok membawa 27 botol.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap kelompok membawa tepat 27 botol.", "correct": false, "feedback": "Belum tepat. Kelompok ketiga hanya membawa 21 botol." },
+        { "text": "Tidak ada kelompok yang membawa lebih dari 27 botol.", "correct": false, "feedback": "Belum tepat. Kelompok kedua membawa 32 botol." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-003", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "ilmiah",
+    "type": "story_mean",
+    "prompt": "Pada tanggal [[t]] Juli, Dina mulai mengukur suhu udara setiap siang selama lima hari. Hasilnya [[a]], [[b]], [[c]], [[d]], dan [[e]] derajat Celsius. Termometer yang ia pakai seharga [[p]] rupiah. Berapa rata-rata suhu udara selama lima hari itu?",
+    "selectables": {
+      "t": { "display": "10", "value": 10, "relevant": false, "meaning": "tanggal Dina mulai mengukur" },
+      "a": { "display": "31", "value": 31, "relevant": true },
+      "b": { "display": "33", "value": 33, "relevant": true },
+      "c": { "display": "32", "value": 32, "relevant": true },
+      "d": { "display": "30", "value": 30, "relevant": true },
+      "e": { "display": "34", "value": 34, "relevant": true },
+      "p": { "display": "25.000", "value": 25000, "relevant": false, "meaning": "harga termometer" }
+    },
+    "unit": "°C",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata suhu udara selama lima hari", "correct": true, "feedback": "Tepat. Data yang dihitung adalah suhu udara." },
+        { "text": "Harga termometer", "correct": false, "feedback": "Belum tepat. Harga termometer sudah diketahui dan tidak ditanyakan." },
+        { "text": "Suhu udara paling tinggi", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata, bukan suhu tertinggi." }
+      ]
+    },
+    "interpret": {
+      "question": "Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata suhunya 32 °C, berada di antara suhu terendah 30 °C dan tertinggi 34 °C.", "correct": true, "feedback": "Tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+        { "text": "Suhu udara selalu 32 °C setiap hari.", "correct": false, "feedback": "Belum tepat. Suhunya berubah-ubah, dari 30 °C sampai 34 °C." },
+        { "text": "Rata-ratanya 32 °C, jadi suhu tertinggi pasti 32 °C.", "correct": false, "feedback": "Belum tepat. Suhu tertinggi adalah 34 °C." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-003-k", "twinOf": "p-mean-05-003", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "ilmiah",
+    "type": "story_mean",
+    "prompt": "Pada tanggal [[t]] Agustus, Bima mulai mengukur tinggi air sungai setiap pagi selama lima hari. Hasilnya [[a]], [[b]], [[c]], [[d]], dan [[e]] cm. Ia memakai tongkat ukur sepanjang [[p]] cm. Berapa rata-rata tinggi air sungai selama lima hari itu?",
+    "selectables": {
+      "t": { "display": "15", "value": 15, "relevant": false, "meaning": "tanggal Bima mulai mengukur" },
+      "a": { "display": "120", "value": 120, "relevant": true },
+      "b": { "display": "115", "value": 115, "relevant": true },
+      "c": { "display": "130", "value": 130, "relevant": true },
+      "d": { "display": "125", "value": 125, "relevant": true },
+      "e": { "display": "110", "value": 110, "relevant": true },
+      "p": { "display": "200", "value": 200, "relevant": false, "meaning": "panjang tongkat ukur" }
+    },
+    "unit": "cm",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata tinggi air sungai selama lima hari", "correct": true, "feedback": "Tepat. Data yang dihitung adalah tinggi air." },
+        { "text": "Panjang tongkat ukur", "correct": false, "feedback": "Belum tepat. Panjang tongkat sudah diketahui dan tidak ditanyakan." },
+        { "text": "Tinggi air paling rendah", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata, bukan tinggi terendah." }
+      ]
+    },
+    "interpret": {
+      "question": "Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Rata-rata tinggi airnya 120 cm, berada di antara tinggi terendah 110 cm dan tertinggi 130 cm.", "correct": true, "feedback": "Tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+        { "text": "Tinggi air selalu 120 cm setiap hari.", "correct": false, "feedback": "Belum tepat. Tinggi air berubah-ubah, dari 110 cm sampai 130 cm." },
+        { "text": "Rata-ratanya 120 cm, jadi tinggi air tertinggi pasti 120 cm.", "correct": false, "feedback": "Belum tepat. Tinggi air tertinggi adalah 130 cm." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-004", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "personal",
+    "type": "story_mean",
+    "prompt": "Raka berumur [[u]] tahun. Selama empat minggu ia menabung [[a]], [[b]], [[c]], dan [[d]] rupiah. Uangnya disimpan di celengan seharga [[p]] rupiah. Berapa rata-rata tabungan Raka per minggu?",
+    "selectables": {
+      "u": { "display": "13", "value": 13, "relevant": false, "meaning": "umur Raka" },
+      "a": { "display": "15.000", "value": 15000, "relevant": true },
+      "b": { "display": "20.000", "value": 20000, "relevant": true },
+      "c": { "display": "10.000", "value": 10000, "relevant": true },
+      "d": { "display": "15.000", "value": 15000, "relevant": true },
+      "p": { "display": "25.000", "value": 25000, "relevant": false, "meaning": "harga celengan" }
+    },
+    "unit": "rupiah",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata tabungan Raka per minggu", "correct": true, "feedback": "Tepat. Data yang dihitung adalah tabungan setiap minggu." },
+        { "text": "Umur Raka", "correct": false, "feedback": "Belum tepat. Umur Raka sudah diketahui dan tidak ditanyakan." },
+        { "text": "Harga celengan", "correct": false, "feedback": "Belum tepat. Harga celengan hanya keterangan tambahan." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika tabungan empat minggu dibagi sama rata, setiap minggu Raka menabung Rp15.000.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Raka selalu menabung tepat Rp15.000 setiap minggu.", "correct": false, "feedback": "Belum tepat. Pada minggu ketiga Raka hanya menabung Rp10.000." },
+        { "text": "Raka tidak pernah menabung lebih dari Rp15.000 dalam seminggu.", "correct": false, "feedback": "Belum tepat. Pada minggu kedua Raka menabung Rp20.000." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-004-k", "twinOf": "p-mean-05-004", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "personal",
+    "type": "story_mean",
+    "prompt": "Sela berumur [[u]] tahun. Selama empat minggu ia menabung [[a]], [[b]], [[c]], dan [[d]] rupiah. Uangnya disimpan di celengan seharga [[p]] rupiah. Berapa rata-rata tabungan Sela per minggu?",
+    "selectables": {
+      "u": { "display": "14", "value": 14, "relevant": false, "meaning": "umur Sela" },
+      "a": { "display": "12.000", "value": 12000, "relevant": true },
+      "b": { "display": "18.000", "value": 18000, "relevant": true },
+      "c": { "display": "20.000", "value": 20000, "relevant": true },
+      "d": { "display": "14.000", "value": 14000, "relevant": true },
+      "p": { "display": "30.000", "value": 30000, "relevant": false, "meaning": "harga celengan" }
+    },
+    "unit": "rupiah",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata tabungan Sela per minggu", "correct": true, "feedback": "Tepat. Data yang dihitung adalah tabungan setiap minggu." },
+        { "text": "Umur Sela", "correct": false, "feedback": "Belum tepat. Umur Sela sudah diketahui dan tidak ditanyakan." },
+        { "text": "Harga celengan", "correct": false, "feedback": "Belum tepat. Harga celengan hanya keterangan tambahan." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika tabungan empat minggu dibagi sama rata, setiap minggu Sela menabung Rp16.000.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Sela selalu menabung tepat Rp16.000 setiap minggu.", "correct": false, "feedback": "Belum tepat. Pada minggu pertama Sela hanya menabung Rp12.000." },
+        { "text": "Sela tidak pernah menabung lebih dari Rp16.000 dalam seminggu.", "correct": false, "feedback": "Belum tepat. Pada minggu ketiga Sela menabung Rp20.000." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-005", "subtopic": "mean-05", "objective": "TP6", "level": "L2", "context": "pekerjaan",
+    "type": "story_mean",
+    "prompt": "Pak Amir memelihara [[k]] ekor sapi. Selama enam hari ia memerah susu sebanyak [[a]], [[b]], [[c]], [[d]], [[e]], dan [[f]] liter. Susu itu dijual [[p]] rupiah per liter. Berapa rata-rata susu yang diperoleh per hari?",
+    "selectables": {
+      "k": { "display": "3", "value": 3, "relevant": false, "meaning": "banyak sapi Pak Amir" },
+      "a": { "display": "20", "value": 20, "relevant": true },
+      "b": { "display": "22", "value": 22, "relevant": true },
+      "c": { "display": "19", "value": 19, "relevant": true },
+      "d": { "display": "21", "value": 21, "relevant": true },
+      "e": { "display": "23", "value": 23, "relevant": true },
+      "f": { "display": "20", "value": 20, "relevant": true },
+      "p": { "display": "8.000", "value": 8000, "relevant": false, "meaning": "harga susu per liter" }
+    },
+    "unit": "liter", "decimals": 1,
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata susu yang diperoleh per hari", "correct": true, "feedback": "Tepat. Data yang dihitung adalah susu setiap hari." },
+        { "text": "Rata-rata susu dari setiap sapi", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata per hari, bukan per sapi." },
+        { "text": "Uang hasil penjualan susu", "correct": false, "feedback": "Belum tepat. Soal tidak menanyakan uang. Baca lagi kalimat terakhir soal." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika susu enam hari dibagi sama rata, setiap hari diperoleh sekitar 20,8 liter.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap sapi menghasilkan 20,8 liter susu per hari.", "correct": false, "feedback": "Belum tepat. 20,8 liter adalah rata-rata susu per hari dari ketiga sapi bersama-sama, bukan dari setiap sapi." },
+        { "text": "Setiap hari diperoleh tepat 20,8 liter susu.", "correct": false, "feedback": "Belum tepat. Hasilnya berbeda setiap hari, dari 19 sampai 23 liter." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-005-k", "twinOf": "p-mean-05-005", "subtopic": "mean-05", "objective": "TP6", "level": "L2", "context": "pekerjaan",
+    "type": "story_mean",
+    "prompt": "Bu Rina memelihara [[k]] ekor ayam. Selama enam hari ia mengumpulkan telur sebanyak [[a]], [[b]], [[c]], [[d]], [[e]], dan [[f]] butir. Telur itu dijual [[p]] rupiah per butir. Berapa rata-rata telur yang diperoleh per hari?",
+    "selectables": {
+      "k": { "display": "50", "value": 50, "relevant": false, "meaning": "banyak ayam Bu Rina" },
+      "a": { "display": "42", "value": 42, "relevant": true },
+      "b": { "display": "45", "value": 45, "relevant": true },
+      "c": { "display": "40", "value": 40, "relevant": true },
+      "d": { "display": "44", "value": 44, "relevant": true },
+      "e": { "display": "43", "value": 43, "relevant": true },
+      "f": { "display": "46", "value": 46, "relevant": true },
+      "p": { "display": "2.000", "value": 2000, "relevant": false, "meaning": "harga telur per butir" }
+    },
+    "unit": "butir", "decimals": 1,
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata telur yang diperoleh per hari", "correct": true, "feedback": "Tepat. Data yang dihitung adalah telur setiap hari." },
+        { "text": "Rata-rata telur dari setiap ayam", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata per hari, bukan per ayam." },
+        { "text": "Uang hasil penjualan telur", "correct": false, "feedback": "Belum tepat. Soal tidak menanyakan uang. Baca lagi kalimat terakhir soal." }
+      ]
+    },
+    "interpret": {
+      "question": "Apa arti hasil rata-rata tersebut?",
+      "options": [
+        { "text": "Jika telur enam hari dibagi sama rata, setiap hari diperoleh sekitar 43,3 butir.", "correct": true, "feedback": "Tepat. Itulah makna rata-rata." },
+        { "text": "Setiap ayam bertelur 43,3 butir per hari.", "correct": false, "feedback": "Belum tepat. 43,3 butir adalah rata-rata telur per hari dari semua ayam bersama-sama." },
+        { "text": "Setiap hari diperoleh tepat 43,3 butir telur.", "correct": false, "feedback": "Belum tepat. Banyak telur selalu bilangan bulat dan berbeda setiap hari, dari 40 sampai 46 butir." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-006", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "sosial",
+    "type": "story_mean",
+    "prompt": "Perpustakaan desa mencatat pengunjung selama seminggu: Senin [[a]], Selasa [[b]], Rabu [[c]], Kamis [[d]], Jumat [[e]], Sabtu [[f]], dan Minggu [[g]] orang. Berapa rata-rata pengunjung pada hari kerja, yaitu Senin sampai Jumat?",
+    "selectables": {
+      "a": { "display": "18", "value": 18, "relevant": true },
+      "b": { "display": "22", "value": 22, "relevant": true },
+      "c": { "display": "20", "value": 20, "relevant": true },
+      "d": { "display": "16", "value": 16, "relevant": true },
+      "e": { "display": "24", "value": 24, "relevant": true },
+      "f": { "display": "45", "value": 45, "relevant": false, "meaning": "pengunjung hari Sabtu, bukan hari kerja" },
+      "g": { "display": "50", "value": 50, "relevant": false, "meaning": "pengunjung hari Minggu, bukan hari kerja" }
+    },
+    "unit": "orang",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata pengunjung pada hari kerja (Senin sampai Jumat)", "correct": true, "feedback": "Tepat. Hanya hari Senin sampai Jumat yang dihitung." },
+        { "text": "Rata-rata pengunjung selama seminggu penuh", "correct": false, "feedback": "Belum tepat. Baca lagi: soal hanya menanyakan hari Senin sampai Jumat." },
+        { "text": "Banyak pengunjung pada hari Minggu", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata pada hari kerja." }
+      ]
+    },
+    "interpret": {
+      "question": "Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Pada hari kerja rata-rata ada 20 pengunjung per hari, sedangkan akhir pekan jauh lebih ramai.", "correct": true, "feedback": "Tepat. Membandingkan hari kerja dan akhir pekan membantu pengelola perpustakaan." },
+        { "text": "Setiap hari dalam seminggu ada sekitar 20 pengunjung.", "correct": false, "feedback": "Belum tepat. Hari Sabtu dan Minggu pengunjungnya 45 dan 50 orang." },
+        { "text": "Pada hari Jumat ada 20 pengunjung.", "correct": false, "feedback": "Belum tepat. Hari Jumat ada 24 pengunjung." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-006-k", "twinOf": "p-mean-05-006", "subtopic": "mean-05", "objective": "TP5", "level": "L2", "context": "pekerjaan",
+    "type": "story_mean",
+    "prompt": "Toko alat tulis di dekat sekolah mencatat pembeli selama seminggu: Senin [[a]], Selasa [[b]], Rabu [[c]], Kamis [[d]], Jumat [[e]], Sabtu [[f]], dan Minggu [[g]] orang. Berapa rata-rata pembeli pada hari sekolah, yaitu Senin sampai Jumat?",
+    "selectables": {
+      "a": { "display": "32", "value": 32, "relevant": true },
+      "b": { "display": "28", "value": 28, "relevant": true },
+      "c": { "display": "35", "value": 35, "relevant": true },
+      "d": { "display": "30", "value": 30, "relevant": true },
+      "e": { "display": "25", "value": 25, "relevant": true },
+      "f": { "display": "12", "value": 12, "relevant": false, "meaning": "pembeli hari Sabtu, bukan hari sekolah" },
+      "g": { "display": "8", "value": 8, "relevant": false, "meaning": "pembeli hari Minggu, bukan hari sekolah" }
+    },
+    "unit": "orang",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata pembeli pada hari sekolah (Senin sampai Jumat)", "correct": true, "feedback": "Tepat. Hanya hari Senin sampai Jumat yang dihitung." },
+        { "text": "Rata-rata pembeli selama seminggu penuh", "correct": false, "feedback": "Belum tepat. Baca lagi: soal hanya menanyakan hari Senin sampai Jumat." },
+        { "text": "Banyak pembeli pada hari Minggu", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata pada hari sekolah." }
+      ]
+    },
+    "interpret": {
+      "question": "Kesimpulan mana yang tepat?",
+      "options": [
+        { "text": "Pada hari sekolah rata-rata ada 30 pembeli per hari, sedangkan akhir pekan jauh lebih sepi.", "correct": true, "feedback": "Tepat. Membandingkan hari sekolah dan akhir pekan membantu pemilik toko." },
+        { "text": "Setiap hari dalam seminggu ada sekitar 30 pembeli.", "correct": false, "feedback": "Belum tepat. Hari Sabtu dan Minggu hanya ada 12 dan 8 pembeli." },
+        { "text": "Pada hari Senin ada 30 pembeli.", "correct": false, "feedback": "Belum tepat. Hari Senin ada 32 pembeli." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-se1", "subtopic": "mean-05", "objective": "TP5", "level": "L2",
+    "type": "self_explain",
+    "prompt": "Mengapa tanggal dan harga tidak ikut dihitung saat mencari rata-rata banyak barang yang terjual?",
+    "options": [
+      { "text": "Karena tanggal dan harga bukan data banyak barang yang terjual.", "correct": true, "feedback": "Tepat. Yang dihitung hanya angka yang menjadi data dari hal yang ditanyakan." },
+      { "text": "Karena angkanya terlalu besar.", "correct": false, "feedback": "Belum tepat. Besar kecilnya angka tidak menentukan. Yang penting: apakah angka itu data yang ditanyakan?" },
+      { "text": "Karena letaknya di awal atau di akhir soal.", "correct": false, "feedback": "Belum tepat. Letak angka tidak menentukan. Yang penting: apakah angka itu data yang ditanyakan?" }
+    ]
+  },
+  {
+    "id": "p-mean-05-007", "subtopic": "mean-05", "objective": "TP6", "level": "L3", "context": "sosial",
+    "type": "story_mean",
+    "prompt": "Lima siswa kelas 8A mengikuti lomba matematika di aula lantai [[l]]. Nilai mereka [[a]], [[b]], [[c]], [[d]], dan [[e]]. Rata-rata nilai lima siswa kelas 8B pada lomba itu adalah [[m]]. Berapa rata-rata nilai lima siswa kelas 8A?",
+    "selectables": {
+      "l": { "display": "2", "value": 2, "relevant": false, "meaning": "lantai tempat lomba" },
+      "a": { "display": "80", "value": 80, "relevant": true },
+      "b": { "display": "75", "value": 75, "relevant": true },
+      "c": { "display": "90", "value": 90, "relevant": true },
+      "d": { "display": "85", "value": 85, "relevant": true },
+      "e": { "display": "70", "value": 70, "relevant": true },
+      "m": { "display": "78", "value": 78, "relevant": false, "meaning": "rata-rata nilai siswa kelas 8B, bukan data kelas 8A" }
+    },
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata nilai lima siswa kelas 8A", "correct": true, "feedback": "Tepat. Yang dihitung hanya nilai siswa kelas 8A." },
+        { "text": "Rata-rata nilai siswa kelas 8B", "correct": false, "feedback": "Belum tepat. Rata-rata kelas 8B sudah diketahui, yaitu 78." },
+        { "text": "Selisih nilai tertinggi dan terendah", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata, bukan selisih." }
+      ]
+    },
+    "interpret": {
+      "question": "Kesimpulan mana yang paling tepat?",
+      "options": [
+        { "text": "Secara rata-rata, nilai siswa 8A (80) lebih tinggi daripada siswa 8B (78).", "correct": true, "feedback": "Tepat. Rata-rata dipakai untuk membandingkan dua kelompok." },
+        { "text": "Semua siswa 8A mendapat nilai lebih tinggi daripada 78.", "correct": false, "feedback": "Belum tepat. Ada siswa 8A yang nilainya 75 dan 70." },
+        { "text": "Siswa kelas 8A pasti lebih pandai dalam semua pelajaran.", "correct": false, "feedback": "Belum tepat. Data ini hanya tentang satu lomba, jadi tidak bisa dipakai untuk semua pelajaran." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-007-k", "twinOf": "p-mean-05-007", "subtopic": "mean-05", "objective": "TP6", "level": "L3", "context": "sosial",
+    "type": "story_mean",
+    "prompt": "Enam pemain tim basket A bertanding di lapangan nomor [[l]]. Poin mereka [[a]], [[b]], [[c]], [[d]], [[e]], dan [[f]]. Rata-rata poin pemain tim B pada pertandingan itu adalah [[m]]. Berapa rata-rata poin pemain tim A?",
+    "selectables": {
+      "l": { "display": "3", "value": 3, "relevant": false, "meaning": "nomor lapangan" },
+      "a": { "display": "12", "value": 12, "relevant": true },
+      "b": { "display": "8", "value": 8, "relevant": true },
+      "c": { "display": "15", "value": 15, "relevant": true },
+      "d": { "display": "10", "value": 10, "relevant": true },
+      "e": { "display": "6", "value": 6, "relevant": true },
+      "f": { "display": "9", "value": 9, "relevant": true },
+      "m": { "display": "11", "value": 11, "relevant": false, "meaning": "rata-rata poin pemain tim B, bukan data tim A" }
+    },
+    "unit": "poin",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata poin pemain tim A", "correct": true, "feedback": "Tepat. Yang dihitung hanya poin pemain tim A." },
+        { "text": "Rata-rata poin pemain tim B", "correct": false, "feedback": "Belum tepat. Rata-rata tim B sudah diketahui, yaitu 11." },
+        { "text": "Poin tertinggi pemain tim A", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata, bukan poin tertinggi." }
+      ]
+    },
+    "interpret": {
+      "question": "Kesimpulan mana yang paling tepat?",
+      "options": [
+        { "text": "Secara rata-rata, pemain tim A (10 poin) mencetak lebih sedikit daripada pemain tim B (11 poin).", "correct": true, "feedback": "Tepat. Rata-rata dipakai untuk membandingkan dua kelompok." },
+        { "text": "Semua pemain tim A mencetak kurang dari 11 poin.", "correct": false, "feedback": "Belum tepat. Ada pemain tim A yang mencetak 12 dan 15 poin." },
+        { "text": "Tim A pasti kalah di semua pertandingan.", "correct": false, "feedback": "Belum tepat. Data ini hanya tentang satu pertandingan." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-008", "subtopic": "mean-05", "objective": "TP6", "level": "L3", "context": "ilmiah",
+    "type": "story_mean",
+    "prompt": "Pada tanggal [[t]] Oktober, petugas UKS menimbang enam siswa. Berat mereka [[a]], [[b]], [[c]], [[d]], [[e]], dan [[f]] kg. Timbangan itu dibeli [[y]] tahun yang lalu. Berapa rata-rata berat badan keenam siswa itu?",
+    "selectables": {
+      "t": { "display": "14", "value": 14, "relevant": false, "meaning": "tanggal penimbangan" },
+      "a": { "display": "45", "value": 45, "relevant": true },
+      "b": { "display": "52", "value": 52, "relevant": true },
+      "c": { "display": "48", "value": 48, "relevant": true },
+      "d": { "display": "50", "value": 50, "relevant": true },
+      "e": { "display": "47", "value": 47, "relevant": true },
+      "f": { "display": "46", "value": 46, "relevant": true },
+      "y": { "display": "2", "value": 2, "relevant": false, "meaning": "berapa tahun lalu timbangan dibeli" }
+    },
+    "unit": "kg",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata berat badan keenam siswa", "correct": true, "feedback": "Tepat. Data yang dihitung adalah berat badan siswa." },
+        { "text": "Umur timbangan", "correct": false, "feedback": "Belum tepat. Umur timbangan hanya keterangan tambahan." },
+        { "text": "Berat badan siswa yang paling berat", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata, bukan berat terbesar." }
+      ]
+    },
+    "interpret": {
+      "question": "Seorang siswa menghitung dan mendapat rata-rata 58 kg. Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Hasil 58 kg tidak masuk akal, karena rata-rata harus berada di antara 45 kg dan 52 kg.", "correct": true, "feedback": "Tepat. Memeriksa kewajaran hasil membantu menemukan kesalahan hitung." },
+        { "text": "Hasil 58 kg mungkin benar, karena rata-rata boleh lebih besar daripada semua data.", "correct": false, "feedback": "Belum tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+        { "text": "Hasil 58 kg benar jika dibulatkan.", "correct": false, "feedback": "Belum tepat. 48 dan 58 berbeda jauh. Ini bukan soal pembulatan." }
+      ]
+    }
+  },
+  {
+    "id": "p-mean-05-008-k", "twinOf": "p-mean-05-008", "subtopic": "mean-05", "objective": "TP6", "level": "L3", "context": "ilmiah",
+    "type": "story_mean",
+    "prompt": "Pada tanggal [[t]] November, Pak Tono mengukur panjang lima ekor ikan lele hasil panen. Panjangnya [[a]], [[b]], [[c]], [[d]], dan [[e]] cm. Kolamnya selebar [[s]] meter. Berapa rata-rata panjang ikan lele itu?",
+    "selectables": {
+      "t": { "display": "9", "value": 9, "relevant": false, "meaning": "tanggal pengukuran" },
+      "a": { "display": "28", "value": 28, "relevant": true },
+      "b": { "display": "32", "value": 32, "relevant": true },
+      "c": { "display": "30", "value": 30, "relevant": true },
+      "d": { "display": "25", "value": 25, "relevant": true },
+      "e": { "display": "35", "value": 35, "relevant": true },
+      "s": { "display": "4", "value": 4, "relevant": false, "meaning": "lebar kolam" }
+    },
+    "unit": "cm",
+    "steps": ["understand", "select", "n", "sum", "divide", "interpret"],
+    "understand": {
+      "question": "Apa yang ditanyakan dalam soal ini?",
+      "options": [
+        { "text": "Rata-rata panjang ikan lele", "correct": true, "feedback": "Tepat. Data yang dihitung adalah panjang ikan." },
+        { "text": "Lebar kolam", "correct": false, "feedback": "Belum tepat. Lebar kolam hanya keterangan tambahan." },
+        { "text": "Panjang ikan yang paling pendek", "correct": false, "feedback": "Belum tepat. Soal menanyakan rata-rata, bukan panjang terkecil." }
+      ]
+    },
+    "interpret": {
+      "question": "Seorang siswa menghitung dan mendapat rata-rata 3 cm. Pernyataan mana yang tepat?",
+      "options": [
+        { "text": "Hasil 3 cm tidak masuk akal, karena rata-rata harus berada di antara 25 cm dan 35 cm.", "correct": true, "feedback": "Tepat. Memeriksa kewajaran hasil membantu menemukan kesalahan hitung." },
+        { "text": "Hasil 3 cm mungkin benar, karena rata-rata boleh lebih kecil daripada semua data.", "correct": false, "feedback": "Belum tepat. Rata-rata selalu berada di antara data terkecil dan terbesar." },
+        { "text": "Hasil 3 cm benar jika dibulatkan.", "correct": false, "feedback": "Belum tepat. 3 dan 30 berbeda jauh. Mungkin ia lupa satu angka nol atau salah membagi." }
+      ]
+    }
+  },
+
+  {
+    "id": "p-mean-06-001", "subtopic": "mean-06", "objective": "TP7", "level": "L2", "context": "personal",
+    "type": "missing_value",
+    "prompt": "Rata-rata nilai 4 kali kuis Dimas adalah 75. Tiga nilainya 70, 80, dan 65. Berapa nilai kuis keempat?",
+    "knownData": [70, 80, 65], "targetMean": 75, "totalCount": 4
+  },
+  {
+    "id": "p-mean-06-001-k", "twinOf": "p-mean-06-001", "subtopic": "mean-06", "objective": "TP7", "level": "L2", "context": "ilmiah",
+    "type": "missing_value",
+    "prompt": "Rata-rata tinggi 5 tanaman adalah 20 cm. Tinggi empat tanaman 18, 22, 19, dan 25 cm. Berapa tinggi tanaman kelima?",
+    "knownData": [18, 22, 19, 25], "targetMean": 20, "totalCount": 5, "unit": "cm"
+  },
+  {
+    "id": "p-mean-06-002", "subtopic": "mean-06", "objective": "TP7", "level": "L2", "context": "pekerjaan",
+    "type": "missing_value",
+    "prompt": "Rata-rata penjualan roti Bu Ani selama 6 hari adalah 40 roti. Penjualan 5 hari pertama adalah 38, 45, 36, 42, dan 40 roti. Berapa roti yang terjual pada hari keenam?",
+    "knownData": [38, 45, 36, 42, 40], "targetMean": 40, "totalCount": 6, "unit": "roti"
+  },
+  {
+    "id": "p-mean-06-002-k", "twinOf": "p-mean-06-002", "subtopic": "mean-06", "objective": "TP7", "level": "L2", "context": "pekerjaan",
+    "type": "missing_value",
+    "prompt": "Rata-rata hasil panen 4 petak sawah adalah 250 kg. Tiga petak menghasilkan 240, 260, dan 245 kg. Berapa hasil panen petak keempat?",
+    "knownData": [240, 260, 245], "targetMean": 250, "totalCount": 4, "unit": "kg"
+  },
+  {
+    "id": "p-mean-06-003", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "personal",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata nilai 4 ulangan Sinta adalah 70. Pada ulangan kelima, Sinta mendapat 90. Apa yang terjadi pada rata-rata nilainya?",
+    "options": [
+      { "text": "Rata-ratanya naik, karena 90 lebih besar daripada rata-rata lama (70).", "correct": true, "feedback": "Tepat. Data baru yang lebih besar dari rata-rata membuat rata-rata naik. Rata-rata barunya (4 × 70 + 90) : 5 = 74." },
+      { "text": "Rata-ratanya menjadi 90.", "correct": false, "feedback": "Belum tepat. Satu nilai baru tidak menggantikan semua nilai lama. Rata-rata barunya (4 × 70 + 90) : 5 = 74." },
+      { "text": "Rata-ratanya tetap 70.", "correct": false, "feedback": "Belum tepat. Data baru yang berbeda dari rata-rata pasti mengubah rata-rata." }
+    ]
+  },
+  {
+    "id": "p-mean-06-003-k", "twinOf": "p-mean-06-003", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "pekerjaan",
+    "type": "multiple_choice",
+    "prompt": "Rata-rata berat 5 buah semangka adalah 4 kg. Lalu ditambah satu semangka seberat 1 kg. Apa yang terjadi pada rata-rata beratnya?",
+    "options": [
+      { "text": "Rata-ratanya turun, karena 1 kg lebih kecil daripada rata-rata lama (4 kg).", "correct": true, "feedback": "Tepat. Data baru yang lebih kecil dari rata-rata membuat rata-rata turun. Rata-rata barunya (5 × 4 + 1) : 6 = 3,5 kg." },
+      { "text": "Rata-ratanya menjadi 1 kg.", "correct": false, "feedback": "Belum tepat. Satu data baru tidak menggantikan semua data lama. Rata-rata barunya (5 × 4 + 1) : 6 = 3,5 kg." },
+      { "text": "Rata-ratanya tetap 4 kg.", "correct": false, "feedback": "Belum tepat. Data baru yang berbeda dari rata-rata pasti mengubah rata-rata." }
+    ]
+  },
+  {
+    "id": "p-mean-06-004", "subtopic": "mean-06", "objective": "TP6", "level": "L3", "context": "pekerjaan",
+    "type": "multiple_choice",
+    "prompt": "Gaji 5 karyawan sebuah toko adalah 3, 3, 4, 3, dan 4 juta rupiah per bulan. Gaji pemiliknya 33 juta rupiah. Rata-rata gaji keenam orang itu sekitar 8,3 juta rupiah. Apakah rata-rata ini menggambarkan gaji kebanyakan orang di toko itu?",
+    "options": [
+      { "text": "Tidak. Kebanyakan bergaji 3 sampai 4 juta. Gaji pemilik yang sangat besar menarik rata-rata ke atas.", "correct": true, "feedback": "Tepat. Data ekstrem membuat rata-rata kurang mewakili kebanyakan data." },
+      { "text": "Ya, karena rata-rata selalu menggambarkan semua data dengan tepat.", "correct": false, "feedback": "Belum tepat. Lima dari enam orang bergaji jauh di bawah 8,3 juta." },
+      { "text": "Ya, karena gaji pemilik juga termasuk data.", "correct": false, "feedback": "Belum tepat. Gaji pemilik memang data, tetapi nilainya sangat berbeda sehingga menarik rata-rata ke atas." }
+    ]
+  },
+  {
+    "id": "p-mean-06-004-k", "twinOf": "p-mean-06-004", "subtopic": "mean-06", "objective": "TP6", "level": "L3", "context": "personal",
+    "type": "multiple_choice",
+    "prompt": "Waktu lari 100 meter enam siswa adalah 15, 16, 14, 15, 16, dan 40 detik. Siswa terakhir sempat terjatuh. Rata-ratanya sekitar 19,3 detik. Apakah rata-rata ini menggambarkan waktu lari kebanyakan siswa?",
+    "options": [
+      { "text": "Tidak. Kebanyakan berlari 14 sampai 16 detik. Waktu 40 detik yang sangat lama menarik rata-rata ke atas.", "correct": true, "feedback": "Tepat. Data ekstrem membuat rata-rata kurang mewakili kebanyakan data." },
+      { "text": "Ya, karena rata-rata selalu menggambarkan semua data dengan tepat.", "correct": false, "feedback": "Belum tepat. Lima dari enam siswa berlari jauh lebih cepat daripada 19,3 detik." },
+      { "text": "Ya, karena waktu siswa yang terjatuh juga termasuk data.", "correct": false, "feedback": "Belum tepat. Waktu itu memang data, tetapi nilainya sangat berbeda sehingga menarik rata-rata ke atas." }
+    ]
+  },
+  {
+    "id": "p-mean-06-005", "subtopic": "mean-06", "objective": "TP6", "level": "L3", "context": "ilmiah",
+    "type": "multiple_choice",
+    "prompt": "Seorang siswa menghitung bahwa rata-rata tinggi badan siswa kelas 8 di sekolahnya adalah 2 meter. Apakah hasil ini masuk akal?",
+    "options": [
+      { "text": "Tidak masuk akal. Tinggi siswa SMP biasanya sekitar 1,4 sampai 1,7 meter, jadi rata-ratanya juga di sekitar itu.", "correct": true, "feedback": "Tepat. Hasil hitungan perlu diperiksa kewajarannya sesuai konteks." },
+      { "text": "Mungkin saja, karena rata-rata bisa lebih besar daripada semua data.", "correct": false, "feedback": "Belum tepat. Rata-rata tidak pernah lebih besar daripada data terbesar." },
+      { "text": "Mungkin saja, karena rata-rata hanya hasil hitungan.", "correct": false, "feedback": "Belum tepat. Hasil hitungan tetap harus masuk akal sesuai konteksnya." }
+    ]
+  },
+  {
+    "id": "p-mean-06-005-k", "twinOf": "p-mean-06-005", "subtopic": "mean-06", "objective": "TP6", "level": "L3", "context": "personal",
+    "type": "multiple_choice",
+    "prompt": "Seorang siswa menghitung bahwa rata-rata uang saku harian siswa di sekolahnya adalah Rp500.000. Apakah hasil ini masuk akal?",
+    "options": [
+      { "text": "Tidak masuk akal. Uang saku harian siswa biasanya sekitar Rp5.000 sampai Rp30.000, jadi rata-ratanya juga di sekitar itu.", "correct": true, "feedback": "Tepat. Hasil hitungan perlu diperiksa kewajarannya sesuai konteks." },
+      { "text": "Mungkin saja, karena rata-rata bisa lebih besar daripada semua data.", "correct": false, "feedback": "Belum tepat. Rata-rata tidak pernah lebih besar daripada data terbesar." },
+      { "text": "Mungkin saja, karena rata-rata hanya hasil hitungan.", "correct": false, "feedback": "Belum tepat. Hasil hitungan tetap harus masuk akal sesuai konteksnya." }
+    ]
+  },
+  {
+    "id": "p-mean-06-006", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "personal",
+    "type": "missing_value",
+    "prompt": "Nilai tiga ulangan pertama Budi adalah 65, 70, dan 75. Budi ingin rata-rata empat ulangannya menjadi 75. Berapa nilai yang harus ia peroleh pada ulangan keempat?",
+    "knownData": [65, 70, 75], "targetMean": 75, "totalCount": 4
+  },
+  {
+    "id": "p-mean-06-006-k", "twinOf": "p-mean-06-006", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "personal",
+    "type": "missing_value",
+    "prompt": "Waktu Lala bersepeda ke sekolah selama tiga hari adalah 20, 25, dan 18 menit. Ia ingin rata-rata empat hari menjadi 20 menit. Berapa menit waktu yang harus ia tempuh pada hari keempat?",
+    "knownData": [20, 25, 18], "targetMean": 20, "totalCount": 4, "unit": "menit"
+  },
+  {
+    "id": "p-mean-06-007", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "sosial",
+    "type": "multiple_choice",
+    "prompt": "Kelas A punya 20 siswa dengan rata-rata nilai 80. Kelas B punya 30 siswa dengan rata-rata nilai 70. Andi berkata rata-rata gabungan kedua kelas adalah (80 + 70) : 2 = 75. Benarkah?",
+    "options": [
+      { "text": "Tidak. Banyak siswanya berbeda, jadi rata-rata gabungan = (20 × 80 + 30 × 70) : 50 = 74.", "correct": true, "feedback": "Tepat. Kelas B lebih banyak siswanya, jadi rata-rata gabungan lebih dekat ke 70." },
+      { "text": "Ya, rata-rata gabungan selalu sama dengan rata-rata dari dua rata-rata.", "correct": false, "feedback": "Belum tepat. Cara itu hanya benar jika banyak siswa kedua kelas sama." },
+      { "text": "Tidak. Rata-rata gabungannya 80 + 70 = 150.", "correct": false, "feedback": "Belum tepat. Rata-rata tidak bisa dijumlahkan begitu saja." }
+    ]
+  },
+  {
+    "id": "p-mean-06-007-k", "twinOf": "p-mean-06-007", "subtopic": "mean-06", "objective": "TP7", "level": "L3", "context": "pekerjaan",
+    "type": "multiple_choice",
+    "prompt": "Toko A menjual rata-rata 40 roti per hari selama 10 hari. Toko B menjual rata-rata 60 roti per hari selama 30 hari. Dimas berkata rata-rata gabungannya (40 + 60) : 2 = 50 roti per hari. Benarkah?",
+    "options": [
+      { "text": "Tidak. Banyak harinya berbeda, jadi rata-rata gabungan = (10 × 40 + 30 × 60) : 40 = 55.", "correct": true, "feedback": "Tepat. Toko B dihitung selama lebih banyak hari, jadi rata-rata gabungan lebih dekat ke 60." },
+      { "text": "Ya, rata-rata gabungan selalu sama dengan rata-rata dari dua rata-rata.", "correct": false, "feedback": "Belum tepat. Cara itu hanya benar jika banyak harinya sama." },
+      { "text": "Tidak. Rata-rata gabungannya 40 + 60 = 100.", "correct": false, "feedback": "Belum tepat. Rata-rata tidak bisa dijumlahkan begitu saja." }
+    ]
+  },
+  {
+    "id": "p-mean-06-se1", "subtopic": "mean-06", "objective": "TP7", "level": "L3",
+    "type": "self_explain",
+    "prompt": "Jelaskan dengan kata-katamu sendiri: mengapa satu data yang sangat besar bisa membuat rata-rata naik banyak?",
+    "freeText": true
+  }
+]

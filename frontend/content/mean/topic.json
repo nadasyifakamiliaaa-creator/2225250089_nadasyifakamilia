@@ -1,0 +1,27 @@
+{
+  "id": "mean",
+  "title": "Rata-rata (Mean)",
+  "objectives": [
+    { "id": "TP1", "level": "L1", "text": "Menjelaskan makna rata-rata sebagai nilai \"bagi sama rata\" dari sekumpulan data" },
+    { "id": "TP2", "level": "L1", "text": "Menentukan banyak data dan jumlah seluruh data dengan tepat" },
+    { "id": "TP3", "level": "L1", "text": "Menghitung mean data tunggal" },
+    { "id": "TP4", "level": "L2", "text": "Menghitung mean data yang disajikan dalam tabel frekuensi" },
+    { "id": "TP5", "level": "L2", "text": "Memilah informasi yang relevan dari soal cerita dan menghitung mean-nya" },
+    { "id": "TP6", "level": "L2-L3", "text": "Menafsirkan nilai mean dalam konteks dan menilai kewajarannya" },
+    { "id": "TP7", "level": "L3", "text": "Menalar dengan mean: data yang hilang, perubahan mean, dan pengaruh data ekstrem" }
+  ],
+  "subtopics": [
+    { "id": "mean-01", "title": "Apa itu Rata-rata?", "file": "01-makna.json", "objectives": ["TP1"], "blueprint": { "L1": 3, "L3": 1 } },
+    { "id": "mean-02", "title": "Menghitung Rata-rata", "file": "02-menghitung.json", "objectives": ["TP2", "TP3"], "blueprint": { "L1": 6, "L2": 2 } },
+    { "id": "mean-03", "title": "Data yang Banyak", "file": "03-data-banyak.json", "objectives": ["TP2", "TP3"], "blueprint": { "L1": 4, "L2": 3 } },
+    { "id": "mean-04", "title": "Rata-rata dari Tabel Frekuensi", "file": "04-tabel-frekuensi.json", "objectives": ["TP4"], "blueprint": { "L1": 2, "L2": 4 } },
+    { "id": "mean-05", "title": "Soal Cerita", "file": "05-soal-cerita.json", "objectives": ["TP5", "TP6"], "blueprint": { "L2": 6, "L3": 2 } },
+    { "id": "mean-06", "title": "Bernalar dengan Rata-rata", "file": "06-bernalar.json", "objectives": ["TP6", "TP7"], "blueprint": { "L2": 2, "L3": 5 } }
+  ],
+  "quizBlueprint": { "L1": 3, "L2": 4, "L3": 3 },
+  "items": {
+    "readiness": "items/readiness.json",
+    "practice": "items/practice.json",
+    "quiz": "items/quiz.json"
+  }
+}

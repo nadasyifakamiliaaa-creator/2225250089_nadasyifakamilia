@@ -1,0 +1,3 @@
+# Akhiran baris konsisten (LF) di semua sistem operasi
+* text=auto eol=lf
+*.png binary

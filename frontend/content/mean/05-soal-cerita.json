@@ -1,0 +1,43 @@
+{
+  "id": "mean-05",
+  "title": "Soal Cerita",
+  "objectives": ["TP5", "TP6"],
+  "screens": [
+    {
+      "type": "context",
+      "text": "Soal cerita sering memuat banyak angka. Tidak semua angka adalah data. Ada tanggal, harga, atau nomor yang tidak perlu ikut dihitung."
+    },
+    {
+      "type": "concept",
+      "text": "Kerjakan soal cerita dengan empat tahap. Pahami: apa yang ditanyakan? Pilah: angka mana yang menjadi data? Hitung: jumlahkan, lalu bagi. Maknai: apa arti hasilnya?"
+    },
+    {
+      "type": "worked_example",
+      "text": "Pada tanggal 3 Maret Bu Sari membuka warung. Hari Senin terjual 24 bungkus nasi, Selasa 30, Rabu 27, dan Kamis 31. Harga sebungkus 12.000 rupiah. Berapa rata-rata nasi yang terjual per hari?",
+      "data": [24, 30, 27, 31],
+      "unit": "bungkus",
+      "steps": [
+        { "key": "understand", "text": "Pahami: yang ditanyakan adalah rata-rata nasi yang terjual per hari." },
+        { "key": "select", "text": "Pilah: datanya 24, 30, 27, dan 31. Tanggal 3 Maret dan harga 12.000 rupiah bukan data penjualan." },
+        { "key": "n", "text": "Hitung: ada 4 data.", "value": 4 },
+        { "key": "sum", "text": "24 + 30 + 27 + 31 = 112.", "value": 112 },
+        { "key": "divide", "text": "112 : 4 = 28.", "value": 28 },
+        { "key": "interpret", "text": "Maknai: jika dibagi sama rata, setiap hari terjual sekitar 28 bungkus nasi. Ada hari yang lebih banyak dan ada yang lebih sedikit." }
+      ]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-05-001",
+      "givenSteps": ["understand", "select"]
+    },
+    {
+      "type": "faded_example",
+      "itemRef": "p-mean-05-002",
+      "givenSteps": ["understand"]
+    },
+    {
+      "type": "practice",
+      "itemRefs": ["p-mean-05-003", "p-mean-05-004", "p-mean-05-005", "p-mean-05-006", "p-mean-05-se1", "p-mean-05-007", "p-mean-05-008"]
+    }
+  ]
+}

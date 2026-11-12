@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Masuk{% endblock %}
+{% block content %}
+<h1>Masuk Dasbor Guru</h1>
+<p class="text-muted">Gunakan kode kelas dan kata sandi yang diberikan peneliti.</p>
+{% if error %}
+<div class="feedback feedback-hint" role="alert">
+  <span class="feedback-icon" aria-hidden="true">!</span>
+  <div class="feedback-body"><p>{{ error }}</p></div>
+</div>
+{% endif %}
+<form method="post" action="/guru/masuk" class="card stack">
+  <div class="field">
+    <label for="kode">Kode kelas</label>
+    <input id="kode" name="kode" class="input" required maxlength="20" autocomplete="username" value="{{ code }}" />
+  </div>
+  <div class="field">
+    <label for="kata_sandi">Kata sandi</label>
+    <input id="kata_sandi" name="kata_sandi" type="password" class="input" required autocomplete="current-password" />
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+</form>
+{% endblock %}
